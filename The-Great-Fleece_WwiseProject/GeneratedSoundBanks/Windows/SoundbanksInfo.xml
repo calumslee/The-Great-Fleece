@@ -16,5 +16,28 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
+		<SoundBank Id="3765803840" Language="SFX" Hash="2836486861">
+			<ObjectPath>\SoundBanks\Default Work Unit\Cutscenes</ObjectPath>
+			<ShortName>Cutscenes</ShortName>
+			<Path>Cutscenes.bnk</Path>
+			<IncludedEvents>
+				<Event Id="3991942870" Name="Music" ObjectPath="\Events\Default Work Unit\Cutscenes\Opening Cutscene\Music" DurationType="OneShot" DurationMin="60.192001" DurationMax="60.192001">
+					<IncludedMemoryFiles>
+						<File Id="724969422" Language="SFX">
+							<ShortName>Intro_Cutscene_Music.wav</ShortName>
+							<Path>SFX\Intro_Cutscene_Music_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1534528548" Name="VO" ObjectPath="\Events\Default Work Unit\Cutscenes\Opening Cutscene\VO" DurationType="OneShot" DurationMin="58.848000" DurationMax="58.848000">
+					<IncludedMemoryFiles>
+						<File Id="121545823" Language="SFX">
+							<ShortName>Intro_Cutscene_Dialogue.wav</ShortName>
+							<Path>SFX\Intro_Cutscene_Dialogue_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" SchemaVersion="97">
 	<Events>
-		<WorkUnit Name="Default Work Unit" ID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="Cutscenes" ID="{E90EB592-3F4D-4AC6-B5EA-923171801808}" ShortID="588991205">
+					<ChildrenList>
+						<Folder Name="Opening Cutscene" ID="{F65DEF2B-6A1D-4FDB-83D7-4D42C7413253}" ShortID="493521054">
+							<ChildrenList>
+								<Event Name="Music" ID="{ED062F5E-5165-4810-B4A3-E2F79311142F}">
+									<ChildrenList>
+										<Action Name="" ID="{BA3CAB78-3F78-4985-91B9-1513D47AD119}" ShortID="509570112">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Intro_Cutscene_Music" ID="{18C08BED-6ABC-45A8-9D44-DC0802B328FF}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}">
+									<ChildrenList>
+										<Action Name="" ID="{93A5F0BB-A29C-4F1E-BCEE-7C082FDB3BB5}" ShortID="127131298">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Intro_Cutscene_Dialogue" ID="{78DE6AA4-73B9-4EF8-B116-D41C49D3FF85}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
 	</Events>
 </WwiseDocument>
