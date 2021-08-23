@@ -12,6 +12,7 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        _destination = transform.position;
         GetReferences();
     }
 
@@ -39,6 +40,12 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
+        ClickToMove();
+        CheckPosition();
+    }
+
+    private void ClickToMove()
+    {
         if (Input.GetMouseButtonDown(0))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -46,16 +53,24 @@ public class Player : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit))
             {
-                _destination = hit.point;
-                _playerNMAgent.SetDestination(_destination);
-                _anim.SetBool("Walk", true);
+                if (_playerNMAgent.SetDestination(hit.point))
+                {
+                    _destination = hit.point;
+                    _anim.SetBool("Walk", true);
+                }
             }
         }
+    }
 
-        float _distance = Vector3.Distance(transform.position, _destination);
-        if (_distance < 1)
+    private void CheckPosition()
+    {
+        if (_destination != null)
         {
-            _anim.SetBool("Walk", false);
+            float _distance = Vector3.Distance(transform.position, _destination);
+            if (_distance < 2.0f)
+            {
+                _anim.SetBool("Walk", false);
+            }
         }
     }
 }
