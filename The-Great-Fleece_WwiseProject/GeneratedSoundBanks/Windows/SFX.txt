@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2129359562	Coin_Drop			\Default Work Unit\SFX\Coin_Drop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	210412132	Coin_Drop	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Coin_Drop_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\SoundFX\Coin_Drop		294976
+

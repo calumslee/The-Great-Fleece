@@ -142,6 +142,28 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Coin_Drop" ID="{14720001-9435-4057-A0A2-2B51DC9331E8}" ShortID="1006087301">
+							<PropertyList>
+								<Property Name="3DPosition" Type="int16" Value="1"/>
+								<Property Name="3DSpatialization" Type="int16" Value="1"/>
+								<Property Name="Pitch" Type="int32">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{43434A04-A3BE-4241-A6F1-E015E0A05485}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="250"/>
+													<Property Name="Min" Type="Real64" Value="-250"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-6</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
@@ -159,6 +181,180 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{0274BF57-9870-4482-A25E-19D78811E019}"/>
+								<Position Name="" ID="{7CF83976-4EF5-4E79-8BA0-ED274E3F01A4}">
+									<PropertyList>
+										<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+									</PropertyList>
+									<ChildrenList>
+										<Path2D Name="Coin_Drop_Path" ID="{22F035EF-0088-474C-83D6-2FE7D5D00BEC}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="3000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>-0.10707</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-24.53608</XPos>
+													<YPos>10.92077</YPos>
+													<Flags>0</Flags>
+													<Time>1000</Time>
+												</Point>
+												<Point>
+													<XPos>-12.5773195876289</XPos>
+													<YPos>32.3340471092077</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>-34.4329896907216</XPos>
+													<YPos>35.7601713062099</YPos>
+													<Flags>0</Flags>
+													<Time>3000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Coin_Drop_Path_01" ID="{A8133412-3345-49DF-872A-0DF4DC4C56DC}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="3000"/>
+												<Property Name="RandomX" Type="Real64" Value="3"/>
+												<Property Name="RandomY" Type="Real64" Value="3"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>24.1237113402062</XPos>
+													<YPos>16.0599571734475</YPos>
+													<Flags>0</Flags>
+													<Time>1000</Time>
+												</Point>
+												<Point>
+													<XPos>38.1443298969072</XPos>
+													<YPos>-10.0642398286938</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>52.9896907216495</XPos>
+													<YPos>17.7730192719486</YPos>
+													<Flags>0</Flags>
+													<Time>3000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Coin_Drop_Path_02" ID="{CB31F205-41E8-4DD0-ABA1-D43CF160A374}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="3000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-11.340206185567</XPos>
+													<YPos>34.0471092077088</YPos>
+													<Flags>0</Flags>
+													<Time>1000</Time>
+												</Point>
+												<Point>
+													<XPos>1.03092783505156</XPos>
+													<YPos>22.4839400428265</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>5.15463917525774</XPos>
+													<YPos>40.4710920770878</YPos>
+													<Flags>0</Flags>
+													<Time>3000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Coin_Drop_Path_03" ID="{A6AB0249-7B19-48AC-8707-0409F6E1EC55}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="3000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>-12.5773195876289</XPos>
+													<YPos>-10.9207708779443</YPos>
+													<Flags>0</Flags>
+													<Time>1000</Time>
+												</Point>
+												<Point>
+													<XPos>-38.5567010309278</XPos>
+													<YPos>-5.35331905781585</YPos>
+													<Flags>0</Flags>
+													<Time>2000</Time>
+												</Point>
+												<Point>
+													<XPos>-18.3505154639175</XPos>
+													<YPos>14.7751605995717</YPos>
+													<Flags>0</Flags>
+													<Time>3000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+										<Path2D Name="Coin_Drop_Path_04" ID="{F619A0D2-CD02-4A3C-BA49-6C6BEF31288C}">
+											<PropertyList>
+												<Property Name="Duration" Type="Uint32" Value="3000"/>
+											</PropertyList>
+											<PointList>
+												<Point>
+													<XPos>0</XPos>
+													<YPos>0</YPos>
+													<Flags>12</Flags>
+													<Time>0</Time>
+												</Point>
+												<Point>
+													<XPos>15.8762886597938</XPos>
+													<YPos>-10.4925053533191</YPos>
+													<Flags>0</Flags>
+													<Time>750</Time>
+												</Point>
+												<Point>
+													<XPos>18.3505154639175</XPos>
+													<YPos>17.3447537473233</YPos>
+													<Flags>0</Flags>
+													<Time>1500</Time>
+												</Point>
+												<Point>
+													<XPos>53.4020618556701</XPos>
+													<YPos>-11.7773019271949</YPos>
+													<Flags>0</Flags>
+													<Time>2250</Time>
+												</Point>
+												<Point>
+													<XPos>71.5463917525773</XPos>
+													<YPos>1.07066381156316</YPos>
+													<Flags>0</Flags>
+													<Time>3000</Time>
+												</Point>
+											</PointList>
+										</Path2D>
+									</ChildrenList>
+								</Position>
+							</PositioningInfo>
 							<ActiveSourceList>
 								<ActiveSource Name="Coin_Drop" ID="{0517D980-F409-4812-A893-E89894A0D2D6}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -238,6 +434,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Sneak_Behind_Columns_Dialogue" ID="{92AF4339-511E-447D-AE8B-04CFCC42EC31}" ShortID="313881280">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-3</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
@@ -260,6 +463,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Toss_Coin_Dialogue" ID="{63D404B7-1D93-4347-AE9E-6E83F492F7ED}" ShortID="610049574">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
@@ -282,6 +492,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Spot_Sleeping_Guard_Dialogue" ID="{326130E9-D763-4A68-B8D1-2858BFF8581C}" ShortID="571169834">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
@@ -304,6 +521,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Darren_Is_Caught_Other" ID="{8698142E-95B4-415D-803C-D4FA7AC3989B}" ShortID="537193641">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
@@ -326,6 +550,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="Darren_Is_Caught" ID="{02CCDA7E-A210-47DA-B44C-66270CD23DA7}" ShortID="89906819">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>

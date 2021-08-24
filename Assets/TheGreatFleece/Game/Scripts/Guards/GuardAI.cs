@@ -10,6 +10,8 @@ public class GuardAI : MonoBehaviour
     private int _currentTarget;
     private bool _targetReached;
     private bool _reverse;
+    private bool _alerted;
+    private Vector3 _coinPos;
 
     private NavMeshAgent _guardNMAgent;
     private Animator _anim;
@@ -41,23 +43,38 @@ public class GuardAI : MonoBehaviour
 
     private void Update()
     {
-        if (_wayPoints.Count > 0)
-        {
-            WayPointMovement();
-        }
+        WayPointMovement();
     }
 
     private void WayPointMovement()
     {
-        if (_wayPoints[_currentTarget] != null)
+        if (_alerted == false && _targetReached == false)
         {
-            _guardNMAgent.SetDestination(_wayPoints[_currentTarget].position);
-        }
+            if (_wayPoints.Count > 0 && _wayPoints[_currentTarget] != null)
+            {
+                _guardNMAgent.SetDestination(_wayPoints[_currentTarget].position);
+                _anim.SetBool("Walk", true);
 
-        float distance = Vector3.Distance(transform.position, _wayPoints[_currentTarget].position);
-        if (distance < 1.0f && _targetReached == false)
+                float distance = Vector3.Distance(transform.position, _wayPoints[_currentTarget].position);
+                if (distance < 1.0f)
+                {
+                    _guardNMAgent.isStopped = true;
+                    StartCoroutine(IdleTime());
+                }
+            }
+
+        }
+        else if (_alerted == true && _targetReached == false)
         {
-            StartCoroutine(IdleTime());
+            _guardNMAgent.SetDestination(_coinPos);
+            _anim.SetBool("Walk", true);
+
+            float distance = Vector3.Distance(transform.position, _coinPos);
+            if (distance < 5.0f)
+            {
+                _guardNMAgent.isStopped = true;
+                StartCoroutine(IdleTime());
+            }
         }
     }
 
@@ -65,13 +82,24 @@ public class GuardAI : MonoBehaviour
     {
         _targetReached = true;
         _anim.SetBool("Walk", false);
-
-        if (_currentTarget == 0 || _currentTarget == _wayPoints.Count - 1)
+        
+        if (_alerted == false)
         {
-            yield return new WaitForSeconds(Random.Range(2f, 5f));
+            if (_currentTarget == 0 || _currentTarget == _wayPoints.Count - 1)
+            {
+                yield return new WaitForSeconds(Random.Range(2f, 5f));
+            }
         }
-
-        SetNextTarget();
+        else if (_alerted == true)
+        {
+            yield return new WaitForSeconds(Random.Range(5f, 10f));
+            _alerted = false;
+        }
+        
+        if (_wayPoints.Count > 0)
+        {
+            SetNextTarget();
+        }
     }
 
     private void SetNextTarget()
@@ -79,7 +107,7 @@ public class GuardAI : MonoBehaviour
         if (_reverse == false)
         {
             _currentTarget++;
-            
+
             if (_currentTarget == _wayPoints.Count - 1)
             {
                 _reverse = true;
@@ -96,6 +124,12 @@ public class GuardAI : MonoBehaviour
         }
 
         _targetReached = false;
-        _anim.SetBool("Walk", true);
+        _guardNMAgent.isStopped = false;
+    }
+
+    public void GoToCoin(Vector3 coinPos)
+    {
+        _alerted = true;
+        _coinPos = coinPos;
     }
 }

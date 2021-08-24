@@ -7,8 +7,16 @@ public class Player : MonoBehaviour
 {
     private Vector3 _destination;
 
+    [SerializeField]
+    private GameObject _coin;
+    private bool _hasThrownCoin;
+
     private NavMeshAgent _playerNMAgent;
     private Animator _anim;
+
+    [Header("Audio")]
+    [SerializeField]
+    private AK.Wwise.Event _coinSound;
 
     private void Start()
     {
@@ -42,19 +50,21 @@ public class Player : MonoBehaviour
     {
         ClickToMove();
         CheckPosition();
+        ClickToThrow();
     }
 
     private void ClickToMove()
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray rayOrigin = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit))
+            if (Physics.Raycast(rayOrigin, out hit))
             {
                 if (_playerNMAgent.SetDestination(hit.point))
                 {
+                    _playerNMAgent.isStopped = false;
                     _destination = hit.point;
                     _anim.SetBool("Walk", true);
                 }
@@ -69,8 +79,50 @@ public class Player : MonoBehaviour
             float _distance = Vector3.Distance(transform.position, _destination);
             if (_distance < 2.0f)
             {
+                _playerNMAgent.isStopped = true;
                 _anim.SetBool("Walk", false);
             }
+        }
+    }
+
+    private void ClickToThrow()
+    {
+        if (Input.GetMouseButtonDown(1) && _hasThrownCoin == false)
+        {
+            StartCoroutine(ThrowCoin());
+        }
+    }
+
+    private IEnumerator ThrowCoin()
+    {
+        Ray rayOrigin = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(rayOrigin, out hit))
+        {
+            _hasThrownCoin = true;
+            _playerNMAgent.isStopped = true;
+
+            _anim.SetTrigger("CoinThrow");
+            float animLength = _anim.GetCurrentAnimatorClipInfo(0).Length;
+
+            yield return new WaitForSeconds(animLength);
+
+            Instantiate(_coin, hit.point, Quaternion.identity);
+            _coinSound.Post(_coin);
+            DistractGuards(hit.point);
+
+            _playerNMAgent.isStopped = false;
+        }
+    }
+
+    private void DistractGuards(Vector3 coinPos)
+    {
+        GameObject[] _guards = GameObject.FindGameObjectsWithTag("Guard1");
+        
+        foreach (GameObject guard in _guards)
+        {
+            guard.GetComponent<GuardAI>().GoToCoin(coinPos);
         }
     }
 }

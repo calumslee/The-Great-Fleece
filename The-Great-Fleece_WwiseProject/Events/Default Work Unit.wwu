@@ -33,6 +33,58 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Folder Name="SFX" ID="{C3092A63-F3FD-4618-954D-1EF2FB774785}" ShortID="151129183">
+					<ChildrenList>
+						<Event Name="Coin_Drop" ID="{764D5084-D331-482F-B9EC-7FE13B3D9D90}">
+							<ChildrenList>
+								<Action Name="" ID="{C32358BD-2CA9-4D6E-8CB2-ED71FC8FE9E8}" ShortID="279983795">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Coin_Drop" ID="{14720001-9435-4057-A0A2-2B51DC9331E8}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Voiceovers" ID="{B31723C4-7C1D-40C2-BAAB-8685BFB291D1}" ShortID="27955348">
+					<ChildrenList>
+						<Event Name="ThrowCoin_VO" ID="{613D4751-004C-4FCC-A026-74073AC5FC39}">
+							<ChildrenList>
+								<Action Name="" ID="{46225767-6EB3-4E6F-8D7A-BDD054E3B501}" ShortID="473756026">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Toss_Coin_Dialogue" ID="{63D404B7-1D93-4347-AE9E-6E83F492F7ED}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="BehindPillar_VO" ID="{8F331A42-FC92-4014-88A3-0BA5B13BCD5A}">
+							<ChildrenList>
+								<Action Name="" ID="{C4C27FD0-7315-4B50-987F-EE83D1E47993}" ShortID="555535271">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Sneak_Behind_Columns_Dialogue" ID="{92AF4339-511E-447D-AE8B-04CFCC42EC31}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="SleepingGuard_VO" ID="{D6A0A76E-BBB0-4AC0-9EC6-1F5C2B20B37C}">
+							<ChildrenList>
+								<Action Name="" ID="{6C6AA485-9455-4447-8933-813D261D570A}" ShortID="271143708">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Spot_Sleeping_Guard_Dialogue" ID="{326130E9-D763-4A68-B8D1-2858BFF8581C}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

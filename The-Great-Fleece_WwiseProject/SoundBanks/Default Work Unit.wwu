@@ -11,6 +11,22 @@
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
 				</SoundBank>
+				<SoundBank Name="SFX" ID="{5602D968-CD22-4336-BE82-1AEAD630B2F4}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Coin_Drop" ID="{764D5084-D331-482F-B9EC-7FE13B3D9D90}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="VO" ID="{A41FE374-0CC4-4DFD-B407-99B52C7B0E29}">
+					<ObjectInclusionList>
+						<ObjectRef Name="BehindPillar_VO" ID="{8F331A42-FC92-4014-88A3-0BA5B13BCD5A}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="SleepingGuard_VO" ID="{D6A0A76E-BBB0-4AC0-9EC6-1F5C2B20B37C}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="ThrowCoin_VO" ID="{613D4751-004C-4FCC-A026-74073AC5FC39}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
 			</ChildrenList>
 		</WorkUnit>
 	</SoundBanks>

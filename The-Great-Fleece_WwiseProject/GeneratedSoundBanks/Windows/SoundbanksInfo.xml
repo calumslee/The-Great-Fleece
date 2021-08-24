@@ -11,10 +11,56 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
+		<SoundBank Id="393239870" Language="SFX" Hash="3756200812">
+			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
+			<ShortName>SFX</ShortName>
+			<Path>SFX.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2129359562" Name="Coin_Drop" ObjectPath="\Events\Default Work Unit\SFX\Coin_Drop" DurationType="OneShot" DurationMin="1.329464" DurationMax="1.774622">
+					<IncludedMemoryFiles>
+						<File Id="210412132" Language="SFX">
+							<ShortName>Coin_Drop.wav</ShortName>
+							<Path>SFX\Coin_Drop_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="1534528548" Language="SFX" Hash="2587872918">
+			<ObjectPath>\SoundBanks\Default Work Unit\VO</ObjectPath>
+			<ShortName>VO</ShortName>
+			<Path>VO.bnk</Path>
+			<IncludedEvents>
+				<Event Id="313206513" Name="BehindPillar_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\BehindPillar_VO" DurationType="OneShot" DurationMin="12.456000" DurationMax="12.456000">
+					<IncludedMemoryFiles>
+						<File Id="5638571" Language="SFX">
+							<ShortName>Sneak_Behind_Columns_Dialogue.wav</ShortName>
+							<Path>SFX\Sneak_Behind_Columns_Dialogue_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1478319989" Name="SleepingGuard_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\SleepingGuard_VO" DurationType="OneShot" DurationMin="5.208000" DurationMax="5.208000">
+					<IncludedMemoryFiles>
+						<File Id="360967948" Language="SFX">
+							<ShortName>Spot_Sleeping_Guard_Dialogue.wav</ShortName>
+							<Path>SFX\Spot_Sleeping_Guard_Dialogue_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2056494470" Name="ThrowCoin_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\ThrowCoin_VO" DurationType="OneShot" DurationMin="9.312000" DurationMax="9.312000">
+					<IncludedMemoryFiles>
+						<File Id="888088345" Language="SFX">
+							<ShortName>Toss_Coin_Dialogue.wav</ShortName>
+							<Path>SFX\Toss_Coin_Dialogue_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
 		</SoundBank>
 		<SoundBank Id="3765803840" Language="SFX" Hash="2836486861">
 			<ObjectPath>\SoundBanks\Default Work Unit\Cutscenes</ObjectPath>
