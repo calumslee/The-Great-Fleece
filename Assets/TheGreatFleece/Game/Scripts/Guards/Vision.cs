@@ -12,6 +12,7 @@ public class Vision : MonoBehaviour
         if (other.tag == "Player")
         {
             Debug.Log("You've been caught, you lose!");
+            //Pass on to Game Manager, which can also set the cameras to caught
             _gameOverCutScene.SetActive(true);
         }
     }
