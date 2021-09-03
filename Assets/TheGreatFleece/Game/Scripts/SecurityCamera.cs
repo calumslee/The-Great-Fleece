@@ -57,14 +57,9 @@ public class SecurityCamera : MonoBehaviour
         }
     }
 
-    public void PlayerCaught()
-    {
-        _playerCaught = true;
-    }
-
     private void Update()
     {
-        if (_playerCaught == true)
+        if (GameManager.Instance.PlayerCaught == true)
         {
             StartCoroutine(GameOverRoutine());
             RotateToCutScene();
@@ -75,11 +70,7 @@ public class SecurityCamera : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            //Update Game Manager which will eventually call the PlayerCaught Function
-            foreach (SecurityCamera script in _cameraScripts)
-            {
-                script.PlayerCaught();
-            }
+            GameManager.Instance.PlayerCaught = true;
         }
     }
 

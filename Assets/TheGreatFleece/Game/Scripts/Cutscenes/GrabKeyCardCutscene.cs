@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CutsceneTrigger : MonoBehaviour
+public class GrabKeyCardCutscene : MonoBehaviour
 {
     [SerializeField]
-    private GameObject _cutScene;
+    private GameObject _keyCardCutscene;
     [SerializeField]
     private Vector3 _darrenEndPos;
     [SerializeField]
@@ -16,9 +16,11 @@ public class CutsceneTrigger : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            _cutScene.SetActive(true);
+            _keyCardCutscene.SetActive(true);
             other.gameObject.transform.position = _darrenEndPos;
             other.gameObject.transform.eulerAngles = _darrenEndRot;
+
+            GameManager.Instance.HasCard = true;
         }
     }
 }
