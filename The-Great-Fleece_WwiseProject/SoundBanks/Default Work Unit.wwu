@@ -5,8 +5,7 @@
 			<ChildrenList>
 				<SoundBank Name="Cutscenes" ID="{11E22C08-C85A-4F90-BA9E-64BC38159FE7}">
 					<ObjectInclusionList>
-						<ObjectRef Name="VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="Music" ID="{ED062F5E-5165-4810-B4A3-E2F79311142F}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Opening_VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>
@@ -23,6 +22,13 @@
 						<ObjectRef Name="BehindPillar_VO" ID="{8F331A42-FC92-4014-88A3-0BA5B13BCD5A}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="SleepingGuard_VO" ID="{D6A0A76E-BBB0-4AC0-9EC6-1F5C2B20B37C}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="ThrowCoin_VO" ID="{613D4751-004C-4FCC-A026-74073AC5FC39}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+				<SoundBank Name="Music" ID="{65A5FB8D-9DB0-4AFA-BD0B-1D54A84FB821}">
+					<ObjectInclusionList>
+						<ObjectRef Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

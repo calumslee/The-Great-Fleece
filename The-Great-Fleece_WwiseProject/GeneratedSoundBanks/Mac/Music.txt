@@ -1,0 +1,21 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
+
+State Group	ID	Name			Wwise Object Path	Notes
+	3826569560	Music_State			\Default Work Unit\Music_State	
+
+State	ID	Name	State Group			Notes
+	214306027	OpeningCutscene	Music_State			
+	748895195	None	Music_State			
+	838070629	DiscoveryStinger	Music_State			
+	3241273864	WinState	Music_State			
+	3504060719	GameAmbience	Music_State			
+	3604647259	MainMenu	Music_State			
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	184618494	Ambient_Background_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Ambient_Background_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Ambient_Music\Ambient_Background_Music\Ambient_Background_Music		8467264
+	535473983	Intro_Cutscene_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Intro_Cutscene_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Intro_Cutscene\Intro_Cutscene_Music\Intro_Cutscene_Music		11556928
+	687114799	Win_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Win_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Win_Music\Win_Music\Win_Music		1058464
+	738967770	Main_Menu_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Main_Menu_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\MainMenu_Music\Main_Menu_Music\Main_Menu_Music		3175264
+	1037705330	Discovery_Stinger_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Discovery_Stinger_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Discovery_Stinger\Discovery_Stinger_Music\Discovery_Stinger_Music		1940464
+

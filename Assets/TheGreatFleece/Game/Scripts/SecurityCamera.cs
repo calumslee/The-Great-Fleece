@@ -9,8 +9,6 @@ public class SecurityCamera : MonoBehaviour
     [SerializeField]
     private Vector3 _cutSceneRotation;
 
-    private bool _playerCaught;
-
     private List<SecurityCamera> _cameraScripts = new List<SecurityCamera>();
     private List<Animator> _animList = new List<Animator>();
     private List<MeshRenderer> _coneMeshes = new List<MeshRenderer>();
@@ -63,6 +61,7 @@ public class SecurityCamera : MonoBehaviour
         {
             StartCoroutine(GameOverRoutine());
             RotateToCutScene();
+            GameManager.Instance.PlayerCaught = false;
         }
     }
 
@@ -75,9 +74,7 @@ public class SecurityCamera : MonoBehaviour
     }
 
     private IEnumerator GameOverRoutine()
-    {
-        _playerCaught = false;
-       
+    {  
         DisableAnimator();
         ChangeColor();
         

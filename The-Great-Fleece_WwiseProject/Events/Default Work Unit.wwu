@@ -3,36 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}" PersistMode="Standalone">
 			<ChildrenList>
-				<Folder Name="Cutscenes" ID="{E90EB592-3F4D-4AC6-B5EA-923171801808}" ShortID="588991205">
-					<ChildrenList>
-						<Folder Name="Opening Cutscene" ID="{F65DEF2B-6A1D-4FDB-83D7-4D42C7413253}" ShortID="493521054">
-							<ChildrenList>
-								<Event Name="Music" ID="{ED062F5E-5165-4810-B4A3-E2F79311142F}">
-									<ChildrenList>
-										<Action Name="" ID="{BA3CAB78-3F78-4985-91B9-1513D47AD119}" ShortID="509570112">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Intro_Cutscene_Music" ID="{18C08BED-6ABC-45A8-9D44-DC0802B328FF}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-								<Event Name="VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}">
-									<ChildrenList>
-										<Action Name="" ID="{93A5F0BB-A29C-4F1E-BCEE-7C082FDB3BB5}" ShortID="127131298">
-											<ReferenceList>
-												<Reference Name="Target">
-													<ObjectRef Name="Intro_Cutscene_Dialogue" ID="{78DE6AA4-73B9-4EF8-B116-D41C49D3FF85}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
-												</Reference>
-											</ReferenceList>
-										</Action>
-									</ChildrenList>
-								</Event>
-							</ChildrenList>
-						</Folder>
-					</ChildrenList>
-				</Folder>
 				<Folder Name="SFX" ID="{C3092A63-F3FD-4618-954D-1EF2FB774785}" ShortID="151129183">
 					<ChildrenList>
 						<Event Name="Coin_Drop" ID="{764D5084-D331-482F-B9EC-7FE13B3D9D90}">
@@ -78,6 +48,32 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Spot_Sleeping_Guard_Dialogue" ID="{326130E9-D763-4A68-B8D1-2858BFF8581C}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Opening_VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}">
+							<ChildrenList>
+								<Action Name="" ID="{93A5F0BB-A29C-4F1E-BCEE-7C082FDB3BB5}" ShortID="127131298">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Intro_Cutscene_Dialogue" ID="{78DE6AA4-73B9-4EF8-B116-D41C49D3FF85}" WorkUnitID="{6AE70863-3928-43FD-9C6F-55E6F3F4704F}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="Music" ID="{8B1392D9-A8A2-4ACD-B7FD-0F0EC789C18A}" ShortID="255576007">
+					<ChildrenList>
+						<Event Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}">
+							<ChildrenList>
+								<Action Name="" ID="{059E49E3-ABBB-4043-80A0-82BA167BBEE5}" ShortID="404178611">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music Switch Container" ID="{FBBB6244-0027-4F8C-AA4B-4E6D708BA448}" WorkUnitID="{DAD90AB4-C70B-4CF2-AF98-B7986299DE72}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

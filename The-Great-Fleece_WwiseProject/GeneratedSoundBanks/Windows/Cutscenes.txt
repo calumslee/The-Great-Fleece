@@ -1,8 +1,6 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1534528548	VO			\Default Work Unit\Cutscenes\Opening Cutscene\VO	
-	3991942870	Music			\Default Work Unit\Cutscenes\Opening Cutscene\Music	
+	1630076119	Opening_VO			\Default Work Unit\Voiceovers\Opening_VO	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	121545823	Intro_Cutscene_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Intro_Cutscene_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Intro_Cutscene_Dialogue		11298880
-	724969422	Intro_Cutscene_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Intro_Cutscene_Music_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Music\Intro_Cutscene_Music		11556928
 
