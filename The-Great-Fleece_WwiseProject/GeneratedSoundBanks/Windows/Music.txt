@@ -1,4 +1,8 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1221014415	Win_State			\Default Work Unit\Music\ChangeMusic_States\Win_State	
+	1564565979	Ambient_Music			\Default Work Unit\Music\ChangeMusic_States\Ambient_Music	
+	1917576450	Opening_Cutscene			\Default Work Unit\Music\ChangeMusic_States\Opening_Cutscene	
+	2476664783	Caught_State			\Default Work Unit\Music\ChangeMusic_States\Caught_State	
 	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
 
 State Group	ID	Name			Wwise Object Path	Notes

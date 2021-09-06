@@ -70,6 +70,16 @@
 					<ChildrenList>
 						<Event Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}">
 							<ChildrenList>
+								<Action Name="" ID="{45BA72D1-2710-46E6-9CFD-4577F7502FF4}" ShortID="856619003">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Music Switch Container" ID="{FBBB6244-0027-4F8C-AA4B-4E6D708BA448}" WorkUnitID="{DAD90AB4-C70B-4CF2-AF98-B7986299DE72}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{059E49E3-ABBB-4043-80A0-82BA167BBEE5}" ShortID="404178611">
 									<ReferenceList>
 										<Reference Name="Target">
@@ -79,6 +89,66 @@
 								</Action>
 							</ChildrenList>
 						</Event>
+						<Folder Name="ChangeMusic_States" ID="{E83AB646-2DF1-46FC-B353-4AAF5CDB9E52}" ShortID="211037155">
+							<ChildrenList>
+								<Event Name="Opening_Cutscene" ID="{B8310137-61AA-42D8-864E-C06E75D052C5}">
+									<ChildrenList>
+										<Action Name="" ID="{1CD8E0C6-9950-4E7E-8D94-E944A1BBCED8}" ShortID="944246939">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="OpeningCutscene" ID="{923E6027-78ED-4F83-8051-734EB5645A1F}" WorkUnitID="{79B7D921-B393-458E-8E3C-E2558A650885}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Ambient_Music" ID="{ED61CDE1-525E-417B-BC74-B44A49802BC0}">
+									<ChildrenList>
+										<Action Name="" ID="{A1744FCD-5CAF-4755-9DC1-EF7A5398C0BB}" ShortID="356916272">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="GameAmbience" ID="{2554BBFD-6875-4CB1-8A06-AAC409FB9EE8}" WorkUnitID="{79B7D921-B393-458E-8E3C-E2558A650885}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Win_State" ID="{8526855C-6EEE-43A0-B56C-9B74191538B9}">
+									<ChildrenList>
+										<Action Name="" ID="{397F2B7B-1CF6-4DE1-A8E3-07A281EE897B}" ShortID="1072987690">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WinState" ID="{6F38C2D1-2EAA-41D0-97DE-A72A087DDEA8}" WorkUnitID="{79B7D921-B393-458E-8E3C-E2558A650885}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Caught_State" ID="{4DE68704-4FDF-496B-90A5-6E1F7CE0C0A9}">
+									<ChildrenList>
+										<Action Name="" ID="{6023AFAE-E441-4271-9984-2D0F5817E973}" ShortID="142600578">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="DiscoveryStinger" ID="{169F3A39-CE9B-4712-948B-9703C7202E40}" WorkUnitID="{79B7D921-B393-458E-8E3C-E2558A650885}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
 					</ChildrenList>
 				</Folder>
 			</ChildrenList>

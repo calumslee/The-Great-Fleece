@@ -77,11 +77,26 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="237504794">
+		<SoundBank Id="3991942870" Language="SFX" Hash="1361183913">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
+				<Event Id="1564565979" Name="Ambient_Music" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Ambient_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3504060719" Name="GameAmbience" ObjectPath="\States\Default Work Unit\Music_State\GameAmbience"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2476664783" Name="Caught_State" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Caught_State" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="838070629" Name="DiscoveryStinger" ObjectPath="\States\Default Work Unit\Music_State\DiscoveryStinger"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1917576450" Name="Opening_Cutscene" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Opening_Cutscene" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="214306027" Name="OpeningCutscene" ObjectPath="\States\Default Work Unit\Music_State\OpeningCutscene"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="184618494" Language="SFX">
@@ -129,12 +144,30 @@
 						<SwitchContainer SwitchValue="{6F38C2D1-2EAA-41D0-97DE-A72A087DDEA8}">
 							<Media>
 								<File Id="687114799"/>
+								<File Id="738967770"/>
 							</Media>
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
+				<Event Id="1221014415" Name="Win_State" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Win_State" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="3241273864" Name="WinState" ObjectPath="\States\Default Work Unit\Music_State\WinState"/>
+					</ActionSetState>
+				</Event>
 			</IncludedEvents>
 			<StateGroups>
+				<StateGroup Id="214306027" Name="OpeningCutscene" ObjectPath="\States\Default Work Unit\Music_State\OpeningCutscene">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="838070629" Name="DiscoveryStinger" ObjectPath="\States\Default Work Unit\Music_State\DiscoveryStinger">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3241273864" Name="WinState" ObjectPath="\States\Default Work Unit\Music_State\WinState">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3504060719" Name="GameAmbience" ObjectPath="\States\Default Work Unit\Music_State\GameAmbience">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State">
 					<States>
 						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_State\None"/>

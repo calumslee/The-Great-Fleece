@@ -12,7 +12,7 @@
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="MainMenu" ID="{C46EE88F-111B-4848-BAD6-A8F08D88E6EF}"/>
+						<CurrentStateRef Name="None" ID="{21EE95A2-AF96-47F9-AA82-D5C77A9CE55B}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true"/>
 				</SoundcasterSession>

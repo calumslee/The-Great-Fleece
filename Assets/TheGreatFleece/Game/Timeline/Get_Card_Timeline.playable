@@ -282,8 +282,6 @@ MonoBehaviour:
   m_Parent: {fileID: 11400000}
   m_Children:
   - {fileID: -8608655897144614884}
-  - {fileID: -5218477603170079891}
-  - {fileID: 2975820733960620995}
   m_Clips: []
   m_Markers:
     m_Objects: []
