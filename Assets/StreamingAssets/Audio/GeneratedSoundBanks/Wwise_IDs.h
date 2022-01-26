@@ -13,36 +13,32 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID AMBIENT_MUSIC = 1564565979U;
         static const AkUniqueID BEHINDPILLAR_VO = 313206513U;
-        static const AkUniqueID CAUGHT_STATE = 2476664783U;
         static const AkUniqueID COIN_DROP = 2129359562U;
-        static const AkUniqueID OPENING_CUTSCENE = 1917576450U;
         static const AkUniqueID OPENING_VO = 1630076119U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID RAIN_AMB = 2127902026U;
         static const AkUniqueID SLEEPINGGUARD_VO = 1478319989U;
         static const AkUniqueID THROWCOIN_VO = 2056494470U;
-        static const AkUniqueID WIN_STATE = 1221014415U;
     } // namespace EVENTS
 
-    namespace STATES
+    namespace SWITCHES
     {
-        namespace MUSIC_STATE
+        namespace MUSIC_SWITCHGROUP
         {
-            static const AkUniqueID GROUP = 3826569560U;
+            static const AkUniqueID GROUP = 3670165402U;
 
-            namespace STATE
+            namespace SWITCH
             {
-                static const AkUniqueID DISCOVERYSTINGER = 838070629U;
-                static const AkUniqueID GAMEAMBIENCE = 3504060719U;
-                static const AkUniqueID MAINMENU = 3604647259U;
-                static const AkUniqueID NONE = 748895195U;
-                static const AkUniqueID OPENINGCUTSCENE = 214306027U;
-                static const AkUniqueID WINSTATE = 3241273864U;
-            } // namespace STATE
-        } // namespace MUSIC_STATE
+                static const AkUniqueID AMBIENT_MUSIC = 1564565979U;
+                static const AkUniqueID CAUGHT_MUSIC = 53629033U;
+                static const AkUniqueID MAINMENU_MUSIC = 1929327811U;
+                static const AkUniqueID OPENCUTSCENE_MUSIC = 2668833633U;
+                static const AkUniqueID WIN_MUSIC = 3475929897U;
+            } // namespace SWITCH
+        } // namespace MUSIC_SWITCHGROUP
 
-    } // namespace STATES
+    } // namespace SWITCHES
 
     namespace BANKS
     {

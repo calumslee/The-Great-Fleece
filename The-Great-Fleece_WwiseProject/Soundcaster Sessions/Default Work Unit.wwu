@@ -6,15 +6,15 @@
 				<SoundcasterSession Name="Music_Test" ID="{10D8A1FF-2B54-4823-8F0D-961228BF70A8}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}" WorkUnitID="{C6F5C00F-B77C-4484-91DE-BF4219B75809}"/>
+							<ObjectRef Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}" WorkUnitID="{33BD52B8-3E45-46C2-B5B9-C2E346C9A8C0}"/>
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="None" ID="{21EE95A2-AF96-47F9-AA82-D5C77A9CE55B}"/>
-					</CurrentStateList>
-					<CurrentSwitchList ShowAll="true"/>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

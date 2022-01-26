@@ -5,13 +5,24 @@ using UnityEngine;
 public class VOTrigger : MonoBehaviour
 {
     [SerializeField]
-    private AK.Wwise.Event _voiceOverAudio;
+    internal AK.Wwise.Event _voiceOverAudio;
+
+    [SerializeField]
+    private bool _onStart, _isTriggered;
+
+    private void Start()
+    {
+        if (_onStart)
+        {
+            AudioManager.Instance.AMVoiceoverEvent(_voiceOverAudio);
+        }
+    }
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player")
+        if (other.tag == "Player" && _isTriggered)
         {
-            _voiceOverAudio.Post(Camera.main.gameObject);
+            AudioManager.Instance.AMVoiceoverEvent(_voiceOverAudio);
         }
     }
 }

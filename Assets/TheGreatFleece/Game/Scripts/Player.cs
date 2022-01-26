@@ -51,6 +51,8 @@ public class Player : MonoBehaviour
         ClickToMove();
         CheckPosition();
         ClickToThrow();
+
+        
     }
 
     private void ClickToMove()
@@ -109,7 +111,7 @@ public class Player : MonoBehaviour
             yield return new WaitForSeconds(animLength);
 
             Instantiate(_coin, hit.point, Quaternion.identity);
-            _coinSound.Post(_coin);
+            AudioManager.Instance.AMSFXEvent(_coinSound, _coin);
             DistractGuards(hit.point);
 
             _playerNMAgent.isStopped = false;

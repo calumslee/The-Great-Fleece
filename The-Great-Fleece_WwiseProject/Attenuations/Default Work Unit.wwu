@@ -1,6 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{9B316669-2F71-47D0-B326-AEF6128CA1FE}" SchemaVersion="97">
 	<Attenuations>
-		<WorkUnit Name="Default Work Unit" ID="{9B316669-2F71-47D0-B326-AEF6128CA1FE}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{9B316669-2F71-47D0-B326-AEF6128CA1FE}" PersistMode="Standalone">
+			<ChildrenList>
+				<Attenuation Name="Distance" ID="{4D26031A-7CDA-427B-9215-0A9517FF8BD0}" ShortID="733916244">
+					<PropertyList>
+						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+					</PropertyList>
+					<CurveUsageInfoList>
+						<VolumeDryUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
+								<Curve Name="VolumeDry" ID="{8B6C2C22-F58A-4828-B30B-D6BF791D5517}">
+									<PropertyList>
+										<Property Name="Flags" Type="int32" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>5</Flags>
+										</Point>
+										<Point>
+											<XPos>30</XPos>
+											<YPos>-200</YPos>
+											<Flags>37</Flags>
+										</Point>
+									</PointList>
+								</Curve>
+							</CurveUsageInfo>
+						</VolumeDryUsage>
+						<VolumeWetGameUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetGameUsage>
+						<VolumeWetUserUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="UseVolumeDry"/>
+						</VolumeWetUserUsage>
+						<LowPassFilterUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</LowPassFilterUsage>
+						<HighPassFilterUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</HighPassFilterUsage>
+						<SpreadUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</SpreadUsage>
+						<FocusUsage>
+							<CurveUsageInfo Platform="Linked" CurveToUse="None"/>
+						</FocusUsage>
+					</CurveUsageInfoList>
+				</Attenuation>
+			</ChildrenList>
+		</WorkUnit>
 	</Attenuations>
 </WwiseDocument>

@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Playables;
 
 public class GameManager : MonoBehaviour
 {
@@ -27,16 +26,5 @@ public class GameManager : MonoBehaviour
 
     public bool HasCard { get; set; }
     public bool PlayerCaught { get; set; }
-
-    [SerializeField]
-    private PlayableDirector _introCutscene;
-
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            _introCutscene.time = _introCutscene.duration - 1.0f;
-        }
-    }
 }
 

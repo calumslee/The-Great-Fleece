@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C35B5ED8-0F44-41C8-BF9D-0FB46AC05076}" SchemaVersion="97">
+	<AudioObjects>
+		<WorkUnit Name="SFX" ID="{C35B5ED8-0F44-41C8-BF9D-0FB46AC05076}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Coin_Drop" ID="{14720001-9435-4057-A0A2-2B51DC9331E8}" ShortID="1006087301">
+					<PropertyList>
+						<Property Name="3DPosition" Type="int16" Value="1"/>
+						<Property Name="3DSpatialization" Type="int16" Value="1"/>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{43434A04-A3BE-4241-A6F1-E015E0A05485}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="250"/>
+											<Property Name="Min" Type="Real64" Value="-250"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Coin_Drop" ID="{0517D980-F409-4812-A893-E89894A0D2D6}">
+							<Language>SFX</Language>
+							<AudioFile>Coin_Drop.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="210412132"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{0274BF57-9870-4482-A25E-19D78811E019}"/>
+						<Position Name="" ID="{7CF83976-4EF5-4E79-8BA0-ED274E3F01A4}">
+							<PropertyList>
+								<Property Name="NewPathForEachSound" Type="bool" Value="True"/>
+								<Property Name="PlayMechanismRandomOrSequence" Type="int16" Value="1"/>
+							</PropertyList>
+							<ChildrenList>
+								<Path2D Name="Coin_Drop_Path" ID="{22F035EF-0088-474C-83D6-2FE7D5D00BEC}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>-0.10707</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-24.53608</XPos>
+											<YPos>10.92077</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-12.5773195876289</XPos>
+											<YPos>32.3340471092077</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>-34.4329896907216</XPos>
+											<YPos>35.7601713062099</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Coin_Drop_Path_01" ID="{A8133412-3345-49DF-872A-0DF4DC4C56DC}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="3000"/>
+										<Property Name="RandomX" Type="Real64" Value="3"/>
+										<Property Name="RandomY" Type="Real64" Value="3"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>24.1237113402062</XPos>
+											<YPos>16.0599571734475</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>38.1443298969072</XPos>
+											<YPos>-10.0642398286938</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>52.9896907216495</XPos>
+											<YPos>17.7730192719486</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Coin_Drop_Path_02" ID="{CB31F205-41E8-4DD0-ABA1-D43CF160A374}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-11.340206185567</XPos>
+											<YPos>34.0471092077088</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>1.03092783505156</XPos>
+											<YPos>22.4839400428265</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>5.15463917525774</XPos>
+											<YPos>40.4710920770878</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Coin_Drop_Path_03" ID="{A6AB0249-7B19-48AC-8707-0409F6E1EC55}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>-12.5773195876289</XPos>
+											<YPos>-10.9207708779443</YPos>
+											<Flags>0</Flags>
+											<Time>1000</Time>
+										</Point>
+										<Point>
+											<XPos>-38.5567010309278</XPos>
+											<YPos>-5.35331905781585</YPos>
+											<Flags>0</Flags>
+											<Time>2000</Time>
+										</Point>
+										<Point>
+											<XPos>-18.3505154639175</XPos>
+											<YPos>14.7751605995717</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+								<Path2D Name="Coin_Drop_Path_04" ID="{F619A0D2-CD02-4A3C-BA49-6C6BEF31288C}">
+									<PropertyList>
+										<Property Name="Duration" Type="Uint32" Value="3000"/>
+									</PropertyList>
+									<PointList>
+										<Point>
+											<XPos>0</XPos>
+											<YPos>0</YPos>
+											<Flags>12</Flags>
+											<Time>0</Time>
+										</Point>
+										<Point>
+											<XPos>15.8762886597938</XPos>
+											<YPos>-10.4925053533191</YPos>
+											<Flags>0</Flags>
+											<Time>750</Time>
+										</Point>
+										<Point>
+											<XPos>18.3505154639175</XPos>
+											<YPos>17.3447537473233</YPos>
+											<Flags>0</Flags>
+											<Time>1500</Time>
+										</Point>
+										<Point>
+											<XPos>53.4020618556701</XPos>
+											<YPos>-11.7773019271949</YPos>
+											<Flags>0</Flags>
+											<Time>2250</Time>
+										</Point>
+										<Point>
+											<XPos>71.5463917525773</XPos>
+											<YPos>1.07066381156316</YPos>
+											<Flags>0</Flags>
+											<Time>3000</Time>
+										</Point>
+									</PointList>
+								</Path2D>
+							</ChildrenList>
+						</Position>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Coin_Drop" ID="{0517D980-F409-4812-A893-E89894A0D2D6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Soft_Footstep" ID="{8C3E0D43-D11B-4EE5-98F9-98F08B7F1733}" ShortID="187682563">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Soft_Footstep" ID="{D2A570AE-D37B-464C-83B1-C3BA8243BB10}">
+							<Language>SFX</Language>
+							<AudioFile>Soft_Footstep.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="177513209"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Soft_Footstep" ID="{D2A570AE-D37B-464C-83B1-C3BA8243BB10}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Rain" ID="{0783B6A7-0DD6-43CB-8CDB-69CF3D999227}" ShortID="486733329">
+					<PropertyList>
+						<Property Name="EnableDiffraction" Type="bool" Value="True"/>
+						<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+						<Property Name="SpeakerPanning" Type="int16" Value="1"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Attenuation">
+							<ObjectRef Name="Distance" ID="{4D26031A-7CDA-427B-9215-0A9517FF8BD0}" WorkUnitID="{9B316669-2F71-47D0-B326-AEF6128CA1FE}"/>
+						</Reference>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Rain" ID="{D14240EE-FAA1-49AE-A036-61DC159E58F8}">
+							<Language>SFX</Language>
+							<AudioFile>Rain.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="670796903"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{748E70B3-FECB-44A7-A869-FD6FA7EFAF3A}"/>
+					</PositioningInfo>
+					<ActiveSourceList>
+						<ActiveSource Name="Rain" ID="{D14240EE-FAA1-49AE-A036-61DC159E58F8}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Marble_Footstep" ID="{156E355B-1349-4C3F-B655-93E68EE257BC}" ShortID="376900125">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Marble_Footstep" ID="{59343CB7-54AF-4681-AB71-0DDA0911066C}">
+							<Language>SFX</Language>
+							<AudioFile>Marble_Footstep.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="411313689"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Marble_Footstep" ID="{59343CB7-54AF-4681-AB71-0DDA0911066C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

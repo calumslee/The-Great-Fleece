@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{57B5E239-3A12-4EF2-A608-8B1E25EDEC77}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="Music" ID="{57B5E239-3A12-4EF2-A608-8B1E25EDEC77}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Music_SwitchGroup" ID="{E8FE043A-6625-40EF-BD5D-1F748C730FB4}">
+					<ChildrenList>
+						<Switch Name="MainMenu_Music" ID="{AAC60765-F328-4EA6-BD5F-1D1928DBB3B2}"/>
+						<Switch Name="OpenCutscene_Music" ID="{D850CEFF-0739-4EE8-B397-C9A04C6B40C6}"/>
+						<Switch Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>
+						<Switch Name="Caught_Music" ID="{11F71D54-B29D-4F47-9E32-8CA9874E23BE}"/>
+						<Switch Name="Win_Music" ID="{147995B3-5E26-419D-9303-300DBCD62F36}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

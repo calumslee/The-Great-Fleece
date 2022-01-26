@@ -11,12 +11,12 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3756200812">
+		<SoundBank Id="393239870" Language="SFX" Hash="2260401456">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
 			<IncludedEvents>
-				<Event Id="2129359562" Name="Coin_Drop" ObjectPath="\Events\Default Work Unit\SFX\Coin_Drop" DurationType="OneShot" DurationMin="1.329464" DurationMax="1.774622">
+				<Event Id="2129359562" Name="Coin_Drop" ObjectPath="\Events\SFX\Coin_Drop" DurationType="OneShot" DurationMin="1.329464" DurationMax="1.774622">
 					<IncludedMemoryFiles>
 						<File Id="210412132" Language="SFX">
 							<ShortName>Coin_Drop.wav</ShortName>
@@ -24,9 +24,17 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="2127902026" Name="Rain_Amb" ObjectPath="\Events\Ambience\Rain_Amb" DurationType="OneShot" DurationMin="35.520000" DurationMax="35.520000">
+					<IncludedMemoryFiles>
+						<File Id="670796903" Language="SFX">
+							<ShortName>Rain.wav</ShortName>
+							<Path>SFX\Rain_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="2440335641">
+		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
@@ -36,7 +44,7 @@
 			<ShortName>VO</ShortName>
 			<Path>VO.bnk</Path>
 			<IncludedEvents>
-				<Event Id="313206513" Name="BehindPillar_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\BehindPillar_VO" DurationType="OneShot" DurationMin="12.456000" DurationMax="12.456000">
+				<Event Id="313206513" Name="BehindPillar_VO" ObjectPath="\Events\Voiceovers\BehindPillar_VO" DurationType="OneShot" DurationMin="12.456000" DurationMax="12.456000">
 					<IncludedMemoryFiles>
 						<File Id="5638571" Language="SFX">
 							<ShortName>Sneak_Behind_Columns_Dialogue.wav</ShortName>
@@ -44,7 +52,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="1478319989" Name="SleepingGuard_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\SleepingGuard_VO" DurationType="OneShot" DurationMin="5.208000" DurationMax="5.208000">
+				<Event Id="1478319989" Name="SleepingGuard_VO" ObjectPath="\Events\Voiceovers\SleepingGuard_VO" DurationType="OneShot" DurationMin="5.208000" DurationMax="5.208000">
 					<IncludedMemoryFiles>
 						<File Id="360967948" Language="SFX">
 							<ShortName>Spot_Sleeping_Guard_Dialogue.wav</ShortName>
@@ -52,7 +60,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2056494470" Name="ThrowCoin_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\ThrowCoin_VO" DurationType="OneShot" DurationMin="9.312000" DurationMax="9.312000">
+				<Event Id="2056494470" Name="ThrowCoin_VO" ObjectPath="\Events\Voiceovers\ThrowCoin_VO" DurationType="OneShot" DurationMin="9.312000" DurationMax="9.312000">
 					<IncludedMemoryFiles>
 						<File Id="888088345" Language="SFX">
 							<ShortName>Toss_Coin_Dialogue.wav</ShortName>
@@ -67,7 +75,7 @@
 			<ShortName>Cutscenes</ShortName>
 			<Path>Cutscenes.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1630076119" Name="Opening_VO" ObjectPath="\Events\Default Work Unit\Voiceovers\Opening_VO" DurationType="OneShot" DurationMin="58.848000" DurationMax="58.848000">
+				<Event Id="1630076119" Name="Opening_VO" ObjectPath="\Events\Voiceovers\Opening_VO" DurationType="OneShot" DurationMin="58.848000" DurationMax="58.848000">
 					<IncludedMemoryFiles>
 						<File Id="121545823" Language="SFX">
 							<ShortName>Intro_Cutscene_Dialogue.wav</ShortName>
@@ -77,27 +85,12 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="1361183913">
+		<SoundBank Id="3991942870" Language="SFX" Hash="3090362907">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1564565979" Name="Ambient_Music" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Ambient_Music" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="3504060719" Name="GameAmbience" ObjectPath="\States\Default Work Unit\Music_State\GameAmbience"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2476664783" Name="Caught_State" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Caught_State" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="838070629" Name="DiscoveryStinger" ObjectPath="\States\Default Work Unit\Music_State\DiscoveryStinger"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="1917576450" Name="Opening_Cutscene" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Opening_Cutscene" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="214306027" Name="OpeningCutscene" ObjectPath="\States\Default Work Unit\Music_State\OpeningCutscene"/>
-					</ActionSetState>
-				</Event>
-				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Music\Play_Music" DurationType="Infinite">
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Music\Play_Music" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="184618494" Language="SFX">
 							<ShortName>Ambient_Background_Music.wav</ShortName>
@@ -121,27 +114,28 @@
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
-						<SwitchContainer SwitchValue="{169F3A39-CE9B-4712-948B-9703C7202E40}">
-							<Media>
-								<File Id="1037705330"/>
-							</Media>
-						</SwitchContainer>
-						<SwitchContainer SwitchValue="{2554BBFD-6875-4CB1-8A06-AAC409FB9EE8}">
+						<SwitchContainer SwitchValue="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}">
 							<Media>
 								<File Id="184618494"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{C46EE88F-111B-4848-BAD6-A8F08D88E6EF}">
+						<SwitchContainer SwitchValue="{11F71D54-B29D-4F47-9E32-8CA9874E23BE}">
 							<Media>
 								<File Id="738967770"/>
+								<File Id="1037705330"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{923E6027-78ED-4F83-8051-734EB5645A1F}">
+						<SwitchContainer SwitchValue="{D850CEFF-0739-4EE8-B397-C9A04C6B40C6}">
 							<Media>
 								<File Id="535473983"/>
 							</Media>
 						</SwitchContainer>
-						<SwitchContainer SwitchValue="{6F38C2D1-2EAA-41D0-97DE-A72A087DDEA8}">
+						<SwitchContainer SwitchValue="{AAC60765-F328-4EA6-BD5F-1D1928DBB3B2}">
+							<Media>
+								<File Id="738967770"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{147995B3-5E26-419D-9303-300DBCD62F36}">
 							<Media>
 								<File Id="687114799"/>
 								<File Id="738967770"/>
@@ -149,36 +143,18 @@
 						</SwitchContainer>
 					</SwitchContainers>
 				</Event>
-				<Event Id="1221014415" Name="Win_State" ObjectPath="\Events\Default Work Unit\Music\ChangeMusic_States\Win_State" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="3241273864" Name="WinState" ObjectPath="\States\Default Work Unit\Music_State\WinState"/>
-					</ActionSetState>
-				</Event>
 			</IncludedEvents>
-			<StateGroups>
-				<StateGroup Id="214306027" Name="OpeningCutscene" ObjectPath="\States\Default Work Unit\Music_State\OpeningCutscene">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="838070629" Name="DiscoveryStinger" ObjectPath="\States\Default Work Unit\Music_State\DiscoveryStinger">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="3241273864" Name="WinState" ObjectPath="\States\Default Work Unit\Music_State\WinState">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="3504060719" Name="GameAmbience" ObjectPath="\States\Default Work Unit\Music_State\GameAmbience">
-					<States/>
-				</StateGroup>
-				<StateGroup Id="3826569560" Name="Music_State" ObjectPath="\States\Default Work Unit\Music_State">
-					<States>
-						<State Id="748895195" Name="None" ObjectPath="\States\Default Work Unit\Music_State\None"/>
-						<State Id="3604647259" Name="MainMenu" ObjectPath="\States\Default Work Unit\Music_State\MainMenu"/>
-						<State Id="214306027" Name="OpeningCutscene" ObjectPath="\States\Default Work Unit\Music_State\OpeningCutscene"/>
-						<State Id="3504060719" Name="GameAmbience" ObjectPath="\States\Default Work Unit\Music_State\GameAmbience"/>
-						<State Id="838070629" Name="DiscoveryStinger" ObjectPath="\States\Default Work Unit\Music_State\DiscoveryStinger"/>
-						<State Id="3241273864" Name="WinState" ObjectPath="\States\Default Work Unit\Music_State\WinState"/>
-					</States>
-				</StateGroup>
-			</StateGroups>
+			<SwitchGroups>
+				<SwitchGroup Id="3670165402" Name="Music_SwitchGroup" ObjectPath="\Switches\Music\Music_SwitchGroup">
+					<Switches>
+						<Switch Id="1929327811" Name="MainMenu_Music" ObjectPath="\Switches\Music\Music_SwitchGroup\MainMenu_Music"/>
+						<Switch Id="2668833633" Name="OpenCutscene_Music" ObjectPath="\Switches\Music\Music_SwitchGroup\OpenCutscene_Music"/>
+						<Switch Id="1564565979" Name="Ambient_Music" ObjectPath="\Switches\Music\Music_SwitchGroup\Ambient_Music"/>
+						<Switch Id="53629033" Name="Caught_Music" ObjectPath="\Switches\Music\Music_SwitchGroup\Caught_Music"/>
+						<Switch Id="3475929897" Name="Win_Music" ObjectPath="\Switches\Music\Music_SwitchGroup\Win_Music"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
 </SoundBanksInfo>

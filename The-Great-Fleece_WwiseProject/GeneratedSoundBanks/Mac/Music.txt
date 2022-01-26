@@ -1,25 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1221014415	Win_State			\Default Work Unit\Music\ChangeMusic_States\Win_State	
-	1564565979	Ambient_Music			\Default Work Unit\Music\ChangeMusic_States\Ambient_Music	
-	1917576450	Opening_Cutscene			\Default Work Unit\Music\ChangeMusic_States\Opening_Cutscene	
-	2476664783	Caught_State			\Default Work Unit\Music\ChangeMusic_States\Caught_State	
-	2932040671	Play_Music			\Default Work Unit\Music\Play_Music	
+	2932040671	Play_Music			\Music\Play_Music	
 
-State Group	ID	Name			Wwise Object Path	Notes
-	3826569560	Music_State			\Default Work Unit\Music_State	
+Switch Group	ID	Name			Wwise Object Path	Notes
+	3670165402	Music_SwitchGroup			\Music\Music_SwitchGroup	
 
-State	ID	Name	State Group			Notes
-	214306027	OpeningCutscene	Music_State			
-	748895195	None	Music_State			
-	838070629	DiscoveryStinger	Music_State			
-	3241273864	WinState	Music_State			
-	3504060719	GameAmbience	Music_State			
-	3604647259	MainMenu	Music_State			
+Switch	ID	Name	Switch Group			Notes
+	53629033	Caught_Music	Music_SwitchGroup			
+	1564565979	Ambient_Music	Music_SwitchGroup			
+	1929327811	MainMenu_Music	Music_SwitchGroup			
+	2668833633	OpenCutscene_Music	Music_SwitchGroup			
+	3475929897	Win_Music	Music_SwitchGroup			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	184618494	Ambient_Background_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Ambient_Background_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Ambient_Music\Ambient_Background_Music\Ambient_Background_Music		8467264
-	535473983	Intro_Cutscene_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Intro_Cutscene_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Intro_Cutscene\Intro_Cutscene_Music\Intro_Cutscene_Music		11556928
-	687114799	Win_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Win_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Win_Music\Win_Music\Win_Music		1058464
-	738967770	Main_Menu_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Main_Menu_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\MainMenu_Music\Main_Menu_Music\Main_Menu_Music		3175264
-	1037705330	Discovery_Stinger_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Discovery_Stinger_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Music Switch Container\Discovery_Stinger\Discovery_Stinger_Music\Discovery_Stinger_Music		1940464
+	184618494	Ambient_Background_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Ambient_Background_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch Container\Ambient_Music\Ambient_Background_Music\Ambient_Background_Music		8467264
+	535473983	Intro_Cutscene_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Intro_Cutscene_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch Container\Intro_Cutscene\Intro_Cutscene_Music\Intro_Cutscene_Music		11556928
+	687114799	Win_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Win_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch Container\Win_Music\Win_Music\Win_Music		1058464
+	738967770	Main_Menu_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Main_Menu_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch Container\Discovery_Stinger\Main_Menu_Music\Main_Menu_Music		3175264
+	1037705330	Discovery_Stinger_Music	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Mac\SFX\Discovery_Stinger_Music_D79FB2B7.wem		\Interactive Music Hierarchy\Music\Music Switch Container\Discovery_Stinger\Discovery_Stinger_Music\Discovery_Stinger_Music		1940464
 

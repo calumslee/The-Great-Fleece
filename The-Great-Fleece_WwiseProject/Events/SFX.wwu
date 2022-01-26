@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9592F66F-74D5-41CF-BB1E-6D2B433C66E8}" SchemaVersion="97">
+	<Events>
+		<WorkUnit Name="SFX" ID="{9592F66F-74D5-41CF-BB1E-6D2B433C66E8}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="Coin_Drop" ID="{764D5084-D331-482F-B9EC-7FE13B3D9D90}">
+					<ChildrenList>
+						<Action Name="" ID="{C32358BD-2CA9-4D6E-8CB2-ED71FC8FE9E8}" ShortID="279983795">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Coin_Drop" ID="{14720001-9435-4057-A0A2-2B51DC9331E8}" WorkUnitID="{C35B5ED8-0F44-41C8-BF9D-0FB46AC05076}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
