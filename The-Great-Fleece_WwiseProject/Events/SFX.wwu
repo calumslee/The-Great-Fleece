@@ -4,6 +4,10 @@
 		<WorkUnit Name="SFX" ID="{9592F66F-74D5-41CF-BB1E-6D2B433C66E8}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Coin_Drop" ID="{764D5084-D331-482F-B9EC-7FE13B3D9D90}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{C32358BD-2CA9-4D6E-8CB2-ED71FC8FE9E8}" ShortID="279983795">
 							<ReferenceList>

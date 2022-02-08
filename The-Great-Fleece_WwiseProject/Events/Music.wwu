@@ -4,6 +4,10 @@
 		<WorkUnit Name="Music" ID="{33BD52B8-3E45-46C2-B5B9-C2E346C9A8C0}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{059E49E3-ABBB-4043-80A0-82BA167BBEE5}" ShortID="404178611">
 							<ReferenceList>

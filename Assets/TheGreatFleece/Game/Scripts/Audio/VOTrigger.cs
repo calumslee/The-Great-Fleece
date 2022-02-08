@@ -10,8 +10,8 @@ public class VOTrigger : MonoBehaviour
     [SerializeField]
     private bool _onStart, _isTriggered;
 
-    private void Start()
-    {
+    private void OnEnable() 
+    { 
         if (_onStart)
         {
             AudioManager.Instance.AMVoiceoverEvent(_voiceOverAudio);

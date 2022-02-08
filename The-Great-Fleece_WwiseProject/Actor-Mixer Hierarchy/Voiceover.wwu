@@ -3,37 +3,10 @@
 	<AudioObjects>
 		<WorkUnit Name="Voiceover" ID="{C1C7890C-BA03-4350-9130-116D31EB64D3}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Darren_Is_Caught" ID="{02CCDA7E-A210-47DA-B44C-66270CD23DA7}" ShortID="89906819">
-					<PropertyList>
-						<Property Name="Volume" Type="Real64">
-							<ValueList>
-								<Value>-8</Value>
-							</ValueList>
-						</Property>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Darren_Is_Caught" ID="{4EC2E62A-710F-4235-810B-B08DDB8FC5CD}">
-							<Language>SFX</Language>
-							<AudioFile>Darren_Is_Caught.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="519160425"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Darren_Is_Caught" ID="{4EC2E62A-710F-4235-810B-B08DDB8FC5CD}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Spot_Sleeping_Guard_Dialogue" ID="{326130E9-D763-4A68-B8D1-2858BFF8581C}" ShortID="571169834">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
@@ -45,7 +18,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+							<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -61,11 +34,13 @@
 						<ActiveSource Name="Spot_Sleeping_Guard_Dialogue" ID="{11373B41-6FE8-42C7-B3B4-63DFB6EC9784}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Darren_Is_Caught_Other" ID="{8698142E-95B4-415D-803C-D4FA7AC3989B}" ShortID="537193641">
+				<Sound Name="Intro_Cutscene_Dialogue" ID="{78DE6AA4-73B9-4EF8-B116-D41C49D3FF85}" ShortID="624258386">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
-								<Value>-8</Value>
+								<Value>-2</Value>
 							</ValueList>
 						</Property>
 					</PropertyList>
@@ -74,29 +49,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Darren_Is_Caught_Other" ID="{3B043609-CC8F-4ACC-9C38-2D197BD15056}">
-							<Language>SFX</Language>
-							<AudioFile>Darren_Is_Caught_Other.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="1034310314"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Darren_Is_Caught_Other" ID="{3B043609-CC8F-4ACC-9C38-2D197BD15056}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
-				<Sound Name="Intro_Cutscene_Dialogue" ID="{78DE6AA4-73B9-4EF8-B116-D41C49D3FF85}" ShortID="624258386">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+							<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -112,12 +65,17 @@
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
+					<PositioningInfo>
+						<Panner Name="" ID="{CB137E3C-71BC-4398-BCDE-612280265848}"/>
+					</PositioningInfo>
 					<ActiveSourceList>
 						<ActiveSource Name="Intro_Cutscene_Dialogue" ID="{4A8FB858-FB06-4FB5-8F3B-5AA6B1CC7F9B}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 				<Sound Name="Sneak_Behind_Columns_Dialogue" ID="{92AF4339-511E-447D-AE8B-04CFCC42EC31}" ShortID="313881280">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-3</Value>
@@ -129,7 +87,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+							<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -147,6 +105,8 @@
 				</Sound>
 				<Sound Name="Toss_Coin_Dialogue" ID="{63D404B7-1D93-4347-AE9E-6E83F492F7ED}" ShortID="610049574">
 					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
 						<Property Name="Volume" Type="Real64">
 							<ValueList>
 								<Value>-8</Value>
@@ -158,7 +118,7 @@
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
 						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+							<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
@@ -174,6 +134,84 @@
 						<ActiveSource Name="Toss_Coin_Dialogue" ID="{C64EFFDD-B3DF-4BE6-B374-69504AF13648}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<RandomSequenceContainer Name="Caught_Dialogue" ID="{B282713B-5908-487E-84CB-D07C46ECECC6}" ShortID="417335421">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Darren_Is_Caught" ID="{02CCDA7E-A210-47DA-B44C-66270CD23DA7}" ShortID="89906819">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Darren_Is_Caught" ID="{4EC2E62A-710F-4235-810B-B08DDB8FC5CD}">
+									<Language>SFX</Language>
+									<AudioFile>Darren_Is_Caught.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="519160425"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Darren_Is_Caught" ID="{4EC2E62A-710F-4235-810B-B08DDB8FC5CD}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Darren_Is_Caught_Other" ID="{8698142E-95B4-415D-803C-D4FA7AC3989B}" ShortID="537193641">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="4"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-8</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="VO" ID="{CE2145AD-2BEE-4635-A70F-933B39379592}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Darren_Is_Caught_Other" ID="{3B043609-CC8F-4ACC-9C38-2D197BD15056}">
+									<Language>SFX</Language>
+									<AudioFile>Darren_Is_Caught_Other.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1034310314"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Darren_Is_Caught_Other" ID="{3B043609-CC8F-4ACC-9C38-2D197BD15056}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</RandomSequenceContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

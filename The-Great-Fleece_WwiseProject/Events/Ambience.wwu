@@ -4,7 +4,47 @@
 		<WorkUnit Name="Ambience" ID="{733DCE25-E371-459C-B67D-BFCAEF7AF58C}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="Rain_Amb" ID="{4C3E17A4-F0CC-4E46-B028-C37677F90BDF}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
+						<Action Name="" ID="{C779747C-8EB5-4349-9515-2F0CE9F7BB44}" ShortID="432625928">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="36"/>
+								<Property Name="SeekPercent" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{F573E0A9-2BB9-4E42-A5E5-051D2A371662}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+								<Property Name="SeekTime" Type="Real64">
+									<ModifierList>
+										<ModifierInfo>
+											<Modifier Name="" ID="{57BC46AB-8508-497A-9749-6FC510ADDA9A}">
+												<PropertyList>
+													<Property Name="Enabled" Type="bool" Value="True"/>
+													<Property Name="Max" Type="Real64" Value="10"/>
+													<Property Name="Min" Type="Real64" Value="-10"/>
+												</PropertyList>
+											</Modifier>
+										</ModifierInfo>
+									</ModifierList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Rain" ID="{0783B6A7-0DD6-43CB-8CDB-69CF3D999227}" WorkUnitID="{C35B5ED8-0F44-41C8-BF9D-0FB46AC05076}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
 						<Action Name="" ID="{7A9E0D9E-BC81-4791-8FAE-03C6E1198E99}" ShortID="63684495">
 							<ReferenceList>
 								<Reference Name="Target">

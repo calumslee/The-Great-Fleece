@@ -14,6 +14,7 @@ namespace AK
     namespace EVENTS
     {
         static const AkUniqueID BEHINDPILLAR_VO = 313206513U;
+        static const AkUniqueID CAUGHT_VO = 3856069829U;
         static const AkUniqueID COIN_DROP = 2129359562U;
         static const AkUniqueID OPENING_VO = 1630076119U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
@@ -40,10 +41,17 @@ namespace AK
 
     } // namespace SWITCHES
 
+    namespace GAME_PARAMETERS
+    {
+        static const AkUniqueID MUSIC_BUS = 2680856269U;
+        static const AkUniqueID PLAYERDISTANCE = 3472912007U;
+        static const AkUniqueID SFX_BUS = 213475909U;
+        static const AkUniqueID VO_BUS = 1191351487U;
+    } // namespace GAME_PARAMETERS
+
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID CUTSCENES = 3765803840U;
         static const AkUniqueID MUSIC = 3991942870U;
         static const AkUniqueID SFX = 393239870U;
         static const AkUniqueID VO = 1534528548U;
@@ -52,6 +60,9 @@ namespace AK
     namespace BUSSES
     {
         static const AkUniqueID MASTER_AUDIO_BUS = 3803692087U;
+        static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID VO = 1534528548U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

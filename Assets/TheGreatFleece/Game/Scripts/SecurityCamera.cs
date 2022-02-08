@@ -79,8 +79,7 @@ public class SecurityCamera : MonoBehaviour
         ChangeColor();
         
         yield return new WaitForSeconds(0.5f);
-        
-        _gameOverCutscene.SetActive(true);
+        GameManager.Instance.GameOverCutscene();
     }
 
     private void DisableAnimator()

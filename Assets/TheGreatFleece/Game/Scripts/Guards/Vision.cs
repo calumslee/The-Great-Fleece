@@ -12,7 +12,6 @@ public class Vision : MonoBehaviour
         if (other.tag == "Player")
         {
             GameManager.Instance.PlayerCaught = true;
-            _gameOverCutScene.SetActive(true);
         }
     }
 }

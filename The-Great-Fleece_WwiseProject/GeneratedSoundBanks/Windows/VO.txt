@@ -1,10 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	313206513	BehindPillar_VO			\Default Work Unit\Voiceovers\BehindPillar_VO	
-	1478319989	SleepingGuard_VO			\Default Work Unit\Voiceovers\SleepingGuard_VO	
-	2056494470	ThrowCoin_VO			\Default Work Unit\Voiceovers\ThrowCoin_VO	
+	313206513	BehindPillar_VO			\Voiceovers\BehindPillar_VO	
+	1478319989	SleepingGuard_VO			\Voiceovers\SleepingGuard_VO	
+	1630076119	Opening_VO			\Voiceovers\Opening_VO	
+	2056494470	ThrowCoin_VO			\Voiceovers\ThrowCoin_VO	
+	3856069829	Caught_VO			\Voiceovers\Caught_VO	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	5638571	Sneak_Behind_Columns_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Sneak_Behind_Columns_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Sneak_Behind_Columns_Dialogue		2391616
-	360967948	Spot_Sleeping_Guard_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Spot_Sleeping_Guard_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Spot_Sleeping_Guard_Dialogue		1000000
-	888088345	Toss_Coin_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Toss_Coin_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\VO\Toss_Coin_Dialogue		1787968
+	5638571	Sneak_Behind_Columns_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Sneak_Behind_Columns_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Voiceover\Sneak_Behind_Columns_Dialogue		2391616
+	121545823	Intro_Cutscene_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Intro_Cutscene_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Voiceover\Intro_Cutscene_Dialogue		11298880
+	360967948	Spot_Sleeping_Guard_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Spot_Sleeping_Guard_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Voiceover\Spot_Sleeping_Guard_Dialogue		1000000
+	519160425	Darren_Is_Caught	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Darren_Is_Caught_10C4C929.wem		\Actor-Mixer Hierarchy\Voiceover\Caught_Dialogue\Darren_Is_Caught		571456
+	888088345	Toss_Coin_Dialogue	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Toss_Coin_Dialogue_10C4C929.wem		\Actor-Mixer Hierarchy\Voiceover\Toss_Coin_Dialogue		1787968
+	1034310314	Darren_Is_Caught_Other	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Darren_Is_Caught_Other_10C4C929.wem		\Actor-Mixer Hierarchy\Voiceover\Caught_Dialogue\Darren_Is_Caught_Other		764992
 

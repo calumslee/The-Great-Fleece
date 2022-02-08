@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="2260401456">
+		<SoundBank Id="393239870" Language="SFX" Hash="1260877200">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -24,22 +24,30 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2127902026" Name="Rain_Amb" ObjectPath="\Events\Ambience\Rain_Amb" DurationType="OneShot" DurationMin="35.520000" DurationMax="35.520000">
+				<Event Id="2127902026" Name="Rain_Amb" ObjectPath="\Events\Ambience\Rain_Amb" MaxAttenuation="40.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
 						<File Id="670796903" Language="SFX">
 							<ShortName>Rain.wav</ShortName>
-							<Path>SFX\Rain_10C4C929.wem</Path>
+							<Path>SFX\Rain_DCEFD6FB.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
 			</IncludedEvents>
+			<GameParameters>
+				<GameParameter Id="3472912007" Name="PlayerDistance" ObjectPath="\Game Parameters\Game Parameters\PlayerDistance"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="4204904655">
+		<SoundBank Id="1355168291" Language="SFX" Hash="1121411887">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
+			<GameParameters>
+				<GameParameter Id="213475909" Name="SFX_Bus" ObjectPath="\Game Parameters\Mix Busses\SFX_Bus"/>
+				<GameParameter Id="1191351487" Name="VO_Bus" ObjectPath="\Game Parameters\Mix Busses\VO_Bus"/>
+				<GameParameter Id="2680856269" Name="Music_Bus" ObjectPath="\Game Parameters\Mix Busses\Music_Bus"/>
+			</GameParameters>
 		</SoundBank>
-		<SoundBank Id="1534528548" Language="SFX" Hash="2587872918">
+		<SoundBank Id="1534528548" Language="SFX" Hash="2064568206">
 			<ObjectPath>\SoundBanks\Default Work Unit\VO</ObjectPath>
 			<ShortName>VO</ShortName>
 			<Path>VO.bnk</Path>
@@ -49,6 +57,26 @@
 						<File Id="5638571" Language="SFX">
 							<ShortName>Sneak_Behind_Columns_Dialogue.wav</ShortName>
 							<Path>SFX\Sneak_Behind_Columns_Dialogue_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3856069829" Name="Caught_VO" ObjectPath="\Events\Voiceovers\Caught_VO" DurationType="OneShot" DurationMin="2.976000" DurationMax="3.984000">
+					<IncludedMemoryFiles>
+						<File Id="519160425" Language="SFX">
+							<ShortName>Darren_Is_Caught.wav</ShortName>
+							<Path>SFX\Darren_Is_Caught_10C4C929.wem</Path>
+						</File>
+						<File Id="1034310314" Language="SFX">
+							<ShortName>Darren_Is_Caught_Other.wav</ShortName>
+							<Path>SFX\Darren_Is_Caught_Other_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1630076119" Name="Opening_VO" ObjectPath="\Events\Voiceovers\Opening_VO" DurationType="OneShot" DurationMin="58.848000" DurationMax="58.848000">
+					<IncludedMemoryFiles>
+						<File Id="121545823" Language="SFX">
+							<ShortName>Intro_Cutscene_Dialogue.wav</ShortName>
+							<Path>SFX\Intro_Cutscene_Dialogue_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -70,22 +98,7 @@
 				</Event>
 			</IncludedEvents>
 		</SoundBank>
-		<SoundBank Id="3765803840" Language="SFX" Hash="894233256">
-			<ObjectPath>\SoundBanks\Default Work Unit\Cutscenes</ObjectPath>
-			<ShortName>Cutscenes</ShortName>
-			<Path>Cutscenes.bnk</Path>
-			<IncludedEvents>
-				<Event Id="1630076119" Name="Opening_VO" ObjectPath="\Events\Voiceovers\Opening_VO" DurationType="OneShot" DurationMin="58.848000" DurationMax="58.848000">
-					<IncludedMemoryFiles>
-						<File Id="121545823" Language="SFX">
-							<ShortName>Intro_Cutscene_Dialogue.wav</ShortName>
-							<Path>SFX\Intro_Cutscene_Dialogue_10C4C929.wem</Path>
-						</File>
-					</IncludedMemoryFiles>
-				</Event>
-			</IncludedEvents>
-		</SoundBank>
-		<SoundBank Id="3991942870" Language="SFX" Hash="3090362907">
+		<SoundBank Id="3991942870" Language="SFX" Hash="20004184">
 			<ObjectPath>\SoundBanks\Default Work Unit\Music</ObjectPath>
 			<ShortName>Music</ShortName>
 			<Path>Music.bnk</Path>

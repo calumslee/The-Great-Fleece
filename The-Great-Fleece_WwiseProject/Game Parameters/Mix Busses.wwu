@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{A4730FE3-A6D0-4ED1-B17F-7C1AF8162483}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Mix Busses" ID="{A4730FE3-A6D0-4ED1-B17F-7C1AF8162483}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="Music_Bus" ID="{4E8CFDF9-F681-46EA-8A40-0B4E973C5EF8}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SFX_Bus" ID="{2D92725F-CFAD-47C8-896E-B2C2418CFA8B}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="75"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="VO_Bus" ID="{D88B98AD-B91A-45D0-A50A-42684752B86C}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="100"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+						<Property Name="SlewRateDown" Type="Real64" Value="75"/>
+						<Property Name="SlewRateUp" Type="Real64" Value="100"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

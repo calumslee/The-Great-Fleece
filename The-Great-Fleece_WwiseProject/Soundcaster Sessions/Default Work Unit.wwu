@@ -10,7 +10,70 @@
 							<Position X="0" Y="0"/>
 						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="VO_Bus" ID="{D88B98AD-B91A-45D0-A50A-42684752B86C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Bus" ID="{4E8CFDF9-F681-46EA-8A40-0B4E973C5EF8}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Bus" ID="{2D92725F-CFAD-47C8-896E-B2C2418CFA8B}"/>
+							<Value>1.29343049639331E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PlayerDistance" ID="{2E37133F-4A5F-4879-B053-4A3AF33F198E}"/>
+							<Value>1.29343050587937E-311</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="Voiceover Instance Check" ID="{84E69788-675C-4987-BF47-110C963ADB52}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="BehindPillar_VO" ID="{8F331A42-FC92-4014-88A3-0BA5B13BCD5A}" WorkUnitID="{CF7D63A2-67C1-41AA-949E-F04339E352CE}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Caught_VO" ID="{E4859C93-E72B-47CD-B045-27D414B4D912}" WorkUnitID="{CF7D63A2-67C1-41AA-949E-F04339E352CE}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Opening_VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}" WorkUnitID="{CF7D63A2-67C1-41AA-949E-F04339E352CE}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="SleepingGuard_VO" ID="{D6A0A76E-BBB0-4AC0-9EC6-1F5C2B20B37C}" WorkUnitID="{CF7D63A2-67C1-41AA-949E-F04339E352CE}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="ThrowCoin_VO" ID="{613D4751-004C-4FCC-A026-74073AC5FC39}" WorkUnitID="{CF7D63A2-67C1-41AA-949E-F04339E352CE}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="VO_Bus" ID="{D88B98AD-B91A-45D0-A50A-42684752B86C}"/>
+							<Value>1.29343050627463E-311</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Bus" ID="{4E8CFDF9-F681-46EA-8A40-0B4E973C5EF8}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Bus" ID="{2D92725F-CFAD-47C8-896E-B2C2418CFA8B}"/>
+							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PlayerDistance" ID="{2E37133F-4A5F-4879-B053-4A3AF33F198E}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>

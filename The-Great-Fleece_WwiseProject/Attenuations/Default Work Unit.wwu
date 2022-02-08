@@ -3,14 +3,14 @@
 	<Attenuations>
 		<WorkUnit Name="Default Work Unit" ID="{9B316669-2F71-47D0-B326-AEF6128CA1FE}" PersistMode="Standalone">
 			<ChildrenList>
-				<Attenuation Name="Distance" ID="{4D26031A-7CDA-427B-9215-0A9517FF8BD0}" ShortID="733916244">
+				<Attenuation Name="Distance" ID="{B2B926DB-61E7-4AD2-B67F-D648B335B32E}" ShortID="416625046">
 					<PropertyList>
-						<Property Name="RadiusMax" Type="Real64" Value="30"/>
+						<Property Name="RadiusMax" Type="Real64" Value="40"/>
 					</PropertyList>
 					<CurveUsageInfoList>
 						<VolumeDryUsage>
 							<CurveUsageInfo Platform="Linked" CurveToUse="Custom">
-								<Curve Name="VolumeDry" ID="{8B6C2C22-F58A-4828-B30B-D6BF791D5517}">
+								<Curve Name="VolumeDry" ID="{BD62C33B-02A2-49C8-B2AA-5C236B888999}">
 									<PropertyList>
 										<Property Name="Flags" Type="int32" Value="3"/>
 									</PropertyList>
@@ -21,7 +21,7 @@
 											<Flags>5</Flags>
 										</Point>
 										<Point>
-											<XPos>30</XPos>
+											<XPos>40</XPos>
 											<YPos>-200</YPos>
 											<Flags>37</Flags>
 										</Point>

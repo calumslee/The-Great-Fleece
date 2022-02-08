@@ -4,6 +4,10 @@
 		<WorkUnit Name="Voiceovers" ID="{CF7D63A2-67C1-41AA-949E-F04339E352CE}" PersistMode="Standalone">
 			<ChildrenList>
 				<Event Name="SleepingGuard_VO" ID="{D6A0A76E-BBB0-4AC0-9EC6-1F5C2B20B37C}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{6C6AA485-9455-4447-8933-813D261D570A}" ShortID="271143708">
 							<ReferenceList>
@@ -15,6 +19,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="Opening_VO" ID="{107E51AE-D3DC-44FF-B6C5-65D09A91631D}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{93A5F0BB-A29C-4F1E-BCEE-7C082FDB3BB5}" ShortID="127131298">
 							<ReferenceList>
@@ -26,6 +34,10 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="ThrowCoin_VO" ID="{613D4751-004C-4FCC-A026-74073AC5FC39}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{46225767-6EB3-4E6F-8D7A-BDD054E3B501}" ShortID="473756026">
 							<ReferenceList>
@@ -37,11 +49,30 @@
 					</ChildrenList>
 				</Event>
 				<Event Name="BehindPillar_VO" ID="{8F331A42-FC92-4014-88A3-0BA5B13BCD5A}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
 					<ChildrenList>
 						<Action Name="" ID="{C4C27FD0-7315-4B50-987F-EE83D1E47993}" ShortID="555535271">
 							<ReferenceList>
 								<Reference Name="Target">
 									<ObjectRef Name="Sneak_Behind_Columns_Dialogue" ID="{92AF4339-511E-447D-AE8B-04CFCC42EC31}" WorkUnitID="{C1C7890C-BA03-4350-9130-116D31EB64D3}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Caught_VO" ID="{E4859C93-E72B-47CD-B045-27D414B4D912}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{6C68B662-4858-4E99-ACCB-6000BF76E64E}" ShortID="912361289">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Caught_Dialogue" ID="{B282713B-5908-487E-84CB-D07C46ECECC6}" WorkUnitID="{C1C7890C-BA03-4350-9130-116D31EB64D3}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>

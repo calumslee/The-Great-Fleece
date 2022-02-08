@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{F8B9D6A3-0FC8-4496-A8DA-211C6E2B150E}" SchemaVersion="97">
+	<GameParameters>
+		<WorkUnit Name="Game Parameters" ID="{F8B9D6A3-0FC8-4496-A8DA-211C6E2B150E}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="PlayerDistance" ID="{2E37133F-4A5F-4879-B053-4A3AF33F198E}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="1"/>
+						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="Max" Type="Real64" Value="20"/>
+						<Property Name="RTPCRamping" Type="int16" Value="1"/>
+					</PropertyList>
+				</GameParameter>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
