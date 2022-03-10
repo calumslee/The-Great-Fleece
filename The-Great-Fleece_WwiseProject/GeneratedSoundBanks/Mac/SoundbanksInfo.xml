@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="1260877200">
+		<SoundBank Id="393239870" Language="SFX" Hash="3570412108">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -23,6 +23,31 @@
 							<Path>SFX\Coin_Drop_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\SFX\Player_Footstep" DurationType="OneShot" DurationMin="0.552000" DurationMax="0.576000">
+					<IncludedMemoryFiles>
+						<File Id="177513209" Language="SFX">
+							<ShortName>Soft_Footstep.wav</ShortName>
+							<Path>SFX\Soft_Footstep_10C4C929.wem</Path>
+						</File>
+						<File Id="411313689" Language="SFX">
+							<ShortName>Marble_Footstep.wav</ShortName>
+							<Path>SFX\Marble_Footstep_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+					<DefaultSwitchValue>{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}</DefaultSwitchValue>
+					<SwitchContainers>
+						<SwitchContainer SwitchValue="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}">
+							<Media>
+								<File Id="177513209"/>
+							</Media>
+						</SwitchContainer>
+						<SwitchContainer SwitchValue="{97D162A7-C491-42B7-8F33-0B753AC0EF22}">
+							<Media>
+								<File Id="411313689"/>
+							</Media>
+						</SwitchContainer>
+					</SwitchContainers>
 				</Event>
 				<Event Id="2127902026" Name="Rain_Amb" ObjectPath="\Events\Ambience\Rain_Amb" MaxAttenuation="40.000000" DurationType="Infinite">
 					<IncludedMemoryFiles>
@@ -36,6 +61,14 @@
 			<GameParameters>
 				<GameParameter Id="3472912007" Name="PlayerDistance" ObjectPath="\Game Parameters\Game Parameters\PlayerDistance"/>
 			</GameParameters>
+			<SwitchGroups>
+				<SwitchGroup Id="684570577" Name="Footstep_Material" ObjectPath="\Switches\SFX\Footstep_Material">
+					<Switches>
+						<Switch Id="2412606308" Name="Carpet" ObjectPath="\Switches\SFX\Footstep_Material\Carpet"/>
+						<Switch Id="1127618254" Name="Marble" ObjectPath="\Switches\SFX\Footstep_Material\Marble"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 		<SoundBank Id="1355168291" Language="SFX" Hash="336261845">
 			<ObjectPath>Init</ObjectPath>

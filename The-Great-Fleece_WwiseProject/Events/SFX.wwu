@@ -18,6 +18,21 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Player_Footstep" ID="{65ACDBA1-7404-4898-B2F9-3765B3C323EA}">
+					<PropertyList>
+						<Property Name="Color" Type="int16" Value="4"/>
+						<Property Name="OverrideColor" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Action Name="" ID="{9D3BEB33-FDF3-4386-897A-04F1D7A9F916}" ShortID="327032024">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Player_Footsteps" ID="{5F70500F-EF22-4241-A814-A50A9943C53E}" WorkUnitID="{C35B5ED8-0F44-41C8-BF9D-0FB46AC05076}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

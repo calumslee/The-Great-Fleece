@@ -18,6 +18,7 @@ namespace AK
         static const AkUniqueID COIN_DROP = 2129359562U;
         static const AkUniqueID OPENING_VO = 1630076119U;
         static const AkUniqueID PLAY_MUSIC = 2932040671U;
+        static const AkUniqueID PLAYER_FOOTSTEP = 2453392179U;
         static const AkUniqueID RAIN_AMB = 2127902026U;
         static const AkUniqueID SLEEPINGGUARD_VO = 1478319989U;
         static const AkUniqueID THROWCOIN_VO = 2056494470U;
@@ -25,6 +26,17 @@ namespace AK
 
     namespace SWITCHES
     {
+        namespace FOOTSTEP_MATERIAL
+        {
+            static const AkUniqueID GROUP = 684570577U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CARPET = 2412606308U;
+                static const AkUniqueID MARBLE = 1127618254U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_MATERIAL
+
         namespace MUSIC_SWITCHGROUP
         {
             static const AkUniqueID GROUP = 3670165402U;

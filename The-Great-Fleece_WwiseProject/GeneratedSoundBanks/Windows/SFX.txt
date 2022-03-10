@@ -1,11 +1,21 @@
 Event	ID	Name			Wwise Object Path	Notes
 	2127902026	Rain_Amb			\Ambience\Rain_Amb	
 	2129359562	Coin_Drop			\SFX\Coin_Drop	
+	2453392179	Player_Footstep			\SFX\Player_Footstep	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	684570577	Footstep_Material			\SFX\Footstep_Material	
+
+Switch	ID	Name	Switch Group			Notes
+	1127618254	Marble	Footstep_Material			
+	2412606308	Carpet	Footstep_Material			
 
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3472912007	PlayerDistance			\Game Parameters\PlayerDistance	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	177513209	Soft_Footstep	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Soft_Footstep_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player_Footsteps\Carpet\Soft_Footstep		106048
 	210412132	Coin_Drop	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Coin_Drop_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Coin_Drop		294976
+	411313689	Marble_Footstep	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Marble_Footstep_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player_Footsteps\Marble\Marble_Footstep		110656
 	670796903	Rain	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Rain_DCEFD6FB.wem		\Actor-Mixer Hierarchy\SFX\Rain		6819968
 

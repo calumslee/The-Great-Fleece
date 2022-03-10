@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{52FC3267-974E-4B87-91D3-6B9C8B4E077E}" SchemaVersion="97">
+	<Switches>
+		<WorkUnit Name="SFX" ID="{52FC3267-974E-4B87-91D3-6B9C8B4E077E}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Footstep_Material" ID="{7CA70900-A2EF-4200-BFF8-9337587FA78F}">
+					<ChildrenList>
+						<Switch Name="Carpet" ID="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}"/>
+						<Switch Name="Marble" ID="{97D162A7-C491-42B7-8F33-0B753AC0EF22}"/>
+					</ChildrenList>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

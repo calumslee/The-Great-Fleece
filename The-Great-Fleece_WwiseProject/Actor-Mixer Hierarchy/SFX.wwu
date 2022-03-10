@@ -223,32 +223,6 @@
 						<ActiveSource Name="Coin_Drop" ID="{0517D980-F409-4812-A893-E89894A0D2D6}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Soft_Footstep" ID="{8C3E0D43-D11B-4EE5-98F9-98F08B7F1733}" ShortID="187682563">
-					<PropertyList>
-						<Property Name="Color" Type="int16" Value="10"/>
-						<Property Name="OverrideColor" Type="bool" Value="True"/>
-					</PropertyList>
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{202790AD-0006-4BFD-A6E8-264EBF9BE3A4}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<AudioFileSource Name="Soft_Footstep" ID="{D2A570AE-D37B-464C-83B1-C3BA8243BB10}">
-							<Language>SFX</Language>
-							<AudioFile>Soft_Footstep.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="177513209"/>
-							</MediaIDList>
-						</AudioFileSource>
-					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Soft_Footstep" ID="{D2A570AE-D37B-464C-83B1-C3BA8243BB10}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
 				<Sound Name="Rain" ID="{0783B6A7-0DD6-43CB-8CDB-69CF3D999227}" ShortID="486733329">
 					<PropertyList>
 						<Property Name="3DSpatialization" Type="int16" Value="1"/>
@@ -367,32 +341,136 @@
 						<ActiveSource Name="Rain" ID="{D14240EE-FAA1-49AE-A036-61DC159E58F8}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
-				<Sound Name="Marble_Footstep" ID="{156E355B-1349-4C3F-B655-93E68EE257BC}" ShortID="376900125">
+				<SwitchContainer Name="Player_Footsteps" ID="{5F70500F-EF22-4241-A814-A50A9943C53E}" ShortID="228410959">
 					<PropertyList>
-						<Property Name="Color" Type="int16" Value="10"/>
+						<Property Name="Color" Type="int16" Value="4"/>
 						<Property Name="OverrideColor" Type="bool" Value="True"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
 						</Reference>
+						<Reference Name="DefaultSwitchOrState">
+							<ObjectRef Name="Carpet" ID="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}" WorkUnitID="{52FC3267-974E-4B87-91D3-6B9C8B4E077E}"/>
+						</Reference>
 						<Reference Name="OutputBus">
-							<ObjectRef Name="SFX" ID="{202790AD-0006-4BFD-A6E8-264EBF9BE3A4}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+						</Reference>
+						<Reference Name="SwitchGroupOrStateGroup">
+							<ObjectRef Name="Footstep_Material" ID="{7CA70900-A2EF-4200-BFF8-9337587FA78F}" WorkUnitID="{52FC3267-974E-4B87-91D3-6B9C8B4E077E}"/>
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Marble_Footstep" ID="{59343CB7-54AF-4681-AB71-0DDA0911066C}">
-							<Language>SFX</Language>
-							<AudioFile>Marble_Footstep.wav</AudioFile>
-							<MediaIDList>
-								<MediaID ID="411313689"/>
-							</MediaIDList>
-						</AudioFileSource>
+						<RandomSequenceContainer Name="Carpet" ID="{DD914C65-A4EE-4D91-B748-4AFCA970F5AF}" ShortID="804199134">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Soft_Footstep" ID="{8C3E0D43-D11B-4EE5-98F9-98F08B7F1733}" ShortID="187682563">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{202790AD-0006-4BFD-A6E8-264EBF9BE3A4}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Soft_Footstep" ID="{D2A570AE-D37B-464C-83B1-C3BA8243BB10}">
+											<Language>SFX</Language>
+											<AudioFile>Soft_Footstep.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="177513209"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Soft_Footstep" ID="{D2A570AE-D37B-464C-83B1-C3BA8243BB10}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Marble" ID="{35ECE467-119B-4566-B5A0-BA832296751E}" ShortID="705194045">
+							<PropertyList>
+								<Property Name="Color" Type="int16" Value="10"/>
+								<Property Name="OverrideColor" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Marble_Footstep" ID="{156E355B-1349-4C3F-B655-93E68EE257BC}" ShortID="376900125">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="10"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FE1ABF78-3C7D-458A-A24C-76014F5A4061}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="SFX" ID="{202790AD-0006-4BFD-A6E8-264EBF9BE3A4}" WorkUnitID="{5330209D-16E8-426E-A0D9-B94AB4905389}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Marble_Footstep" ID="{59343CB7-54AF-4681-AB71-0DDA0911066C}">
+											<Language>SFX</Language>
+											<AudioFile>Marble_Footstep.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="411313689"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Marble_Footstep" ID="{59343CB7-54AF-4681-AB71-0DDA0911066C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
 					</ChildrenList>
-					<ActiveSourceList>
-						<ActiveSource Name="Marble_Footstep" ID="{59343CB7-54AF-4681-AB71-0DDA0911066C}" Platform="Linked"/>
-					</ActiveSourceList>
-				</Sound>
+					<GroupingInfo>
+						<GroupingBehaviorList>
+							<GroupingBehavior>
+								<ItemRef Name="Carpet" ID="{DD914C65-A4EE-4D91-B748-4AFCA970F5AF}"/>
+							</GroupingBehavior>
+							<GroupingBehavior>
+								<ItemRef Name="Marble" ID="{35ECE467-119B-4566-B5A0-BA832296751E}"/>
+							</GroupingBehavior>
+						</GroupingBehaviorList>
+						<GroupingList>
+							<Grouping>
+								<SwitchRef Name="Marble" ID="{97D162A7-C491-42B7-8F33-0B753AC0EF22}"/>
+								<ItemList>
+									<ItemRef Name="Marble" ID="{35ECE467-119B-4566-B5A0-BA832296751E}"/>
+								</ItemList>
+							</Grouping>
+							<Grouping>
+								<SwitchRef Name="Carpet" ID="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}"/>
+								<ItemList>
+									<ItemRef Name="Carpet" ID="{DD914C65-A4EE-4D91-B748-4AFCA970F5AF}"/>
+								</ItemList>
+							</Grouping>
+						</GroupingList>
+					</GroupingInfo>
+				</SwitchContainer>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

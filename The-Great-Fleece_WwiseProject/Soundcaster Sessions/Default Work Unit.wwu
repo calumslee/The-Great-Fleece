@@ -77,6 +77,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>
+						<CurrentSwitchRef Name="Carpet" ID="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
