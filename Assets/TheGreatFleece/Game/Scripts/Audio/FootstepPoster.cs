@@ -33,9 +33,8 @@ public class FootstepPoster : MonoBehaviour
     {
         if (other.tag == "FloorMaterial")
         {
-            Debug.Log("Floor" + this.name);
             AK.Wwise.Switch _material = other.GetComponent<FloorMaterial>().Material;
-            Debug.Log(_material.Name);
+            AkSoundEngine.SetSwitch("Footstep_Material", _material.ToString(), this.gameObject);
         }
     }
 
