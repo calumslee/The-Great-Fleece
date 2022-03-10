@@ -42,5 +42,6 @@ public class FootstepPoster : MonoBehaviour
     public void PostFootstep()
     {
         AudioManager.Instance.AMSFXEvent(_footstepSFX, this.gameObject);
+        Debug.Log("Footstep");
     }
 }
