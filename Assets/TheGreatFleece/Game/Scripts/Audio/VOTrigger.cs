@@ -10,6 +10,8 @@ public class VOTrigger : MonoBehaviour
     [SerializeField]
     private bool _onStart, _isTriggered;
 
+    private bool _hasPlayed = false;
+
     private void OnEnable() 
     { 
         if (_onStart)
@@ -20,9 +22,11 @@ public class VOTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && _isTriggered)
+
+        if (other.tag == "Player" && _isTriggered && !_hasPlayed)
         {
             AudioManager.Instance.AMVoiceoverEvent(_voiceOverAudio);
+            _hasPlayed = true;
         }
     }
 }

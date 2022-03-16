@@ -124,7 +124,11 @@ public class Player : MonoBehaviour
         
         foreach (GameObject guard in _guards)
         {
-            guard.GetComponent<GuardAI>().GoToCoin(coinPos);
+            float distance = Vector3.Distance(guard.transform.position, coinPos);
+            if (distance < 30)
+            {
+                guard.GetComponent<GuardAI>().GoToCoin(coinPos);
+            }
         }
     }
 }

@@ -11,7 +11,7 @@
 	<StreamedFiles/>
 	<MediaFilesNotInAnyBank/>
 	<SoundBanks>
-		<SoundBank Id="393239870" Language="SFX" Hash="3570412108">
+		<SoundBank Id="393239870" Language="SFX" Hash="4072093089">
 			<ObjectPath>\SoundBanks\Default Work Unit\SFX</ObjectPath>
 			<ShortName>SFX</ShortName>
 			<Path>SFX.bnk</Path>
@@ -24,7 +24,7 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
-				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\SFX\Player_Footstep" DurationType="OneShot" DurationMin="0.552000" DurationMax="0.576000">
+				<Event Id="2453392179" Name="Player_Footstep" ObjectPath="\Events\SFX\Player_Footstep" DurationType="OneShot" DurationMin="0.491776" DurationMax="0.814587">
 					<IncludedMemoryFiles>
 						<File Id="177513209" Language="SFX">
 							<ShortName>Soft_Footstep.wav</ShortName>
@@ -70,7 +70,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="1355168291" Language="SFX" Hash="1121411887">
+		<SoundBank Id="1355168291" Language="SFX" Hash="346259201">
 			<ObjectPath>Init</ObjectPath>
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>

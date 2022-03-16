@@ -31,6 +31,7 @@
 					<CurrentStateList ShowAll="true"/>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>
+						<CurrentSwitchRef Name="Carpet" ID="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}"/>
 					</CurrentSwitchList>
 				</SoundcasterSession>
 				<SoundcasterSession Name="Voiceover Instance Check" ID="{84E69788-675C-4987-BF47-110C963ADB52}">
@@ -68,6 +69,49 @@
 						<RTPCValue>
 							<GameParameterRef Name="SFX_Bus" ID="{2D92725F-CFAD-47C8-896E-B2C2418CFA8B}"/>
 							<Value>0</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="PlayerDistance" ID="{2E37133F-4A5F-4879-B053-4A3AF33F198E}"/>
+							<Value>0</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true"/>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Ambient_Music" ID="{DE988474-1F25-4CF7-A4A6-06E7E4FC64C3}"/>
+						<CurrentSwitchRef Name="Carpet" ID="{995670E3-0DF6-4AB6-A2E3-C3BB141F8A5D}"/>
+					</CurrentSwitchList>
+				</SoundcasterSession>
+				<SoundcasterSession Name="SFX Levels" ID="{A2E5BFEB-A2ED-4D0C-B89B-DF0B216EE7DF}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="Play_Music" ID="{72C17EA1-7945-4E88-A0B2-0B4F3B1FC10C}" WorkUnitID="{33BD52B8-3E45-46C2-B5B9-C2E346C9A8C0}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Rain_Amb" ID="{4C3E17A4-F0CC-4E46-B028-C37677F90BDF}" WorkUnitID="{733DCE25-E371-459C-B67D-BFCAEF7AF58C}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Player_Footstep" ID="{65ACDBA1-7404-4898-B2F9-3765B3C323EA}" WorkUnitID="{9592F66F-74D5-41CF-BB1E-6D2B433C66E8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Coin_Drop" ID="{764D5084-D331-482F-B9EC-7FE13B3D9D90}" WorkUnitID="{9592F66F-74D5-41CF-BB1E-6D2B433C66E8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+					</ModuleList>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="VO_Bus" ID="{D88B98AD-B91A-45D0-A50A-42684752B86C}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="Music_Bus" ID="{4E8CFDF9-F681-46EA-8A40-0B4E973C5EF8}"/>
+							<Value>100</Value>
+						</RTPCValue>
+						<RTPCValue>
+							<GameParameterRef Name="SFX_Bus" ID="{2D92725F-CFAD-47C8-896E-B2C2418CFA8B}"/>
+							<Value>100</Value>
 						</RTPCValue>
 						<RTPCValue>
 							<GameParameterRef Name="PlayerDistance" ID="{2E37133F-4A5F-4879-B053-4A3AF33F198E}"/>

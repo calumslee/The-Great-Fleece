@@ -13,6 +13,11 @@ Switch	ID	Name	Switch Group			Notes
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	3472912007	PlayerDistance			\Game Parameters\PlayerDistance	
 
+Effect plug-ins	ID	Name	Type				Notes
+	1159390747	Room_Medium_Tiled	Wwise RoomVerb			
+	1610472764	Footstep_Carpet_EQ	Wwise Parametric EQ			
+	2891462749	Room_Medium_High_Absorbtion	Wwise RoomVerb			
+
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	177513209	Soft_Footstep	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Soft_Footstep_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Player_Footsteps\Carpet\Soft_Footstep		106048
 	210412132	Coin_Drop	C:\Users\Callum\Desktop\GameDevHQ\The-Great-Fleece\The-Great-Fleece_WwiseProject\.cache\Windows\SFX\Coin_Drop_10C4C929.wem		\Actor-Mixer Hierarchy\SFX\Coin_Drop		294976
